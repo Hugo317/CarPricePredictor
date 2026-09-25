@@ -1,0 +1,8 @@
+column,step,rule,filled,to_placeholder,placeholder
+condition,condition,missing → 'unknown',140276,140276,unknown
+paint_color,paint colour,"missing → 'missing', rare colours → 'not ordinary'",106119,106119,missing
+manufacturer,manufacturer,"missing → first word of the model if it's a known brand (typos like 'chevorlet' fixed), else 'unknown'",12480,5111,unknown
+model,model names,"raw model text → clean base model with Claude; rare names → 'other', missing → 'unknown'",3695,3695,unknown
+cylinders,unknown cylinders,"electric → 'other', hybrid → 4 cylinders, else the model's most common; still unknown → dropped",147709,1603,other
+type,type,"missing → the model's most common type, else 'unknown'",75537,1010,other
+drive,drive,"missing → the model's drive when 80%+ of its listings agree, else 'unknown'",105697,42695,unknown

@@ -1,0 +1,22 @@
+step,rule,rows_before,rows_after,removed
+raw listings,"Craigslist used-car listings across the US, posted April–May 2021",426880,426880,0
+unused columns,"id, image_url, region_url, posting_date and county dropped: ids, links, one month of dates, an empty column",426880,426880,0
+$0 price,listings with a $0 price (no price given),426880,393985,32895
+before 1980,built before 1980 or no year: classics follow different pricing,393985,384591,9394
+region column,"the ~400 craigslist regions dropped, state is kept instead",384591,384591,0
+size column,dropped: it overlaps with model,384591,384591,0
+fake price,"under $500, under $1,000 for a 2010+ car, over $200k, or a 2021+ car under $5k (a financing price)",384591,372712,11879
+condition,missing → 'unknown',372712,372712,0
+paint colour,"missing → 'missing', rare colours → 'not ordinary'",372712,372712,0
+manufacturer,"missing → first word of the model if it's a known brand (typos like 'chevorlet' fixed), else 'unknown'",372712,372712,0
+missing year,no year (already removed by the 1980 step),372712,372712,0
+model names,"raw model text → clean base model with Claude; rare names → 'other', missing → 'unknown'",372712,372712,0
+bad odometer,"missing, over 500,000 miles, or under 100 miles on a pre-2020 car",372712,367214,5498
+missing fuel,no fuel type,367214,365144,2070
+missing title,no title status,365144,359783,5361
+unknown cylinders,"electric → 'other', hybrid → 4 cylinders, else the model's most common; still unknown → dropped",359783,359074,709
+missing transmission,no transmission,359074,357696,1378
+type,"missing → the model's most common type, else 'unknown'",357696,357696,0
+drive,"missing → the model's drive when 80%+ of its listings agree, else 'unknown'",357696,357696,0
+duplicates,same values in every column except state and the raw listing fields: the same car posted again,357696,205385,152311
+listing fields,"url, VIN, description and lat / long turned into is_dealer, has_vin, desc_len and keyword flags",205385,205385,0

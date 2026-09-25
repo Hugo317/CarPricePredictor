@@ -1,0 +1,4 @@
+kind,same model text,same ad text,cars,median_similarity,compared_pairs
+Carvana,1.0,0.0,5738,0.9939194324803649,147
+other dealer,0.94,0.3,25757,0.994546693933197,515
+private owner,0.83,0.52,483,0.9661246612466124,5

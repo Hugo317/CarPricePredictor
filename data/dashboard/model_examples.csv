@@ -1,0 +1,31 @@
+manufacturer,model_raw,model_clean,listings
+ford,f-150,f-150,6917
+ford,f150,f-150,1039
+ford,f-150 xlt,f-150,399
+ford,f150 supercrew cab xlt,f-150,343
+ford,f150 super cab xl pickup 4d,f-150,289
+ford,f150 supercrew cab,f-150,265
+ram,1500,1500,3545
+ram,1500 crew cab big horn,1500,635
+ram,1500 classic regular cab,1500,383
+ram,pickup 1500,1500,252
+ram,1500 4x4,1500,177
+ram,1500 quad cab harvest pickup,1500,174
+ford,f-250,f-250,1307
+ford,f250,f-250,771
+ford,f250 super duty,f-250,543
+ford,f-250 super duty,f-250,517
+ford,super duty f-250 srw,f-250,457
+ford,super duty f-250,f-250,393
+ford,f-350,f-350,898
+ford,f350,f-350,503
+ford,super duty f-350 srw,f-350,501
+ford,f350 super duty,f-350,416
+ford,f-350 super duty,f-350,300
+ford,super duty f-350 drw,f-350,265
+bmw,3 series,3 series,788
+bmw,328i,3 series,549
+bmw,3 series 330i xdrive sedan,3 series,300
+bmw,3 series 340i sedan 4d,3 series,219
+bmw,3-series,3 series,182
+bmw,335i,3 series,164

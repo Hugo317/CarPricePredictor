@@ -1,0 +1,10 @@
+metric,value
+rows before the dedupe,357696.0
+removed,152311.0
+kept,205385.0
+removed share,0.42581130345321166
+dealer share of removed,0.9706521525037588
+carvana share of removed,0.35460341012796187
+same post scraped twice,0.0
+rows still sharing a VIN,8170.0
+cars still sharing a VIN,3887.0

@@ -1,0 +1,14 @@
+{
+  "model": "CatBoostRegressor",
+  "use_native": false,
+  "params": {
+    "depth": 10,
+    "iterations": 3000,
+    "l2_leaf_reg": 5.187855301194419,
+    "learning_rate": 0.0964420650918313,
+    "random_strength": 3.3994812107955625
+  },
+  "cv_rmse_log": 0.3105,
+  "quick": false,
+  "n_train_rows": 164308
+}

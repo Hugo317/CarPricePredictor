@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Data (large or generated)
+vehicles.csv
+data/model_map_progress.jsonl
+data/fixed_models.csv
+data/vehicles_clean.csv
+
+# Trained models
+models/
+catboost_info/
+
+# Browser screenshots from dashboard checks
+.playwright-mcp/

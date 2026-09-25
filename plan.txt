@@ -1,0 +1,14 @@
+the objective here is to create a ml model that can preditc the car prices across USA
+when a user enters a values to sell his car in a site like "blocket" 
+there shoud be a meter if the car is cheap, on average or expensive
+
+the point is for both users and sellers know if their car is fairly priced 
+
+
+1 split in X and y 
+2 clean all data from nan 
+3 handle incorrect data types and tranform columns 
+4 run scoring tests on different regression models 
+5 hyper tune the promissing ones
+6 run the test again on the hypertuned ones 
+7 chose best model 
