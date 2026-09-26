@@ -1,0 +1,4 @@
+model,rmse_default,rmse_tuned,gain_vs_default,gain_vs_linear,best_params
+CatBoostRegressor,0.3384219414219173,0.3128492427500797,0.0255726986718375,0.1002534355878275,"depth=10, iterations=1500, l2_leaf_reg=2.8581, learning_rate=0.1677"
+HistGradientBoostingRegressor,0.357840133885736,0.3234634578525854,0.0343766760331506,0.0896392204853218,"l2_regularization=0.0292, learning_rate=0.0688, max_iter=1000, max_leaf_nodes=76, min_samples_leaf=60"
+RandomForestRegressor,0.3633249192492083,0.3517050317488174,0.0116198875003909,0.0613976465890898,"n_estimators=200, min_samples_leaf=1, max_features=0.2, max_depth=None"

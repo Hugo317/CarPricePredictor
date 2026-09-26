@@ -1,0 +1,6 @@
+step,rmse_log,used
+LinearRegression (baseline),0.4131026783379072,True
+CatBoost default,0.3384219414219173,True
+CatBoost tuned (round 1),0.3128492427500797,True
+"CatBoost native, round-1 params",0.3134863828234439,False
+CatBoost tuned (round 2),0.310498998983492,True

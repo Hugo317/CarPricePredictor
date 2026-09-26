@@ -2,15 +2,14 @@ import numpy as np
 import plotly.graph_objects as go
 import streamlit as st
 
-from common import AMBER, DARK_SLATE, LIGHT_SLATE, ROSE, SLATE, TEAL, TEXT, VIOLET, chart, load, panel
+from common import BLUE, GOLD, GRAPHITE, GREEN, LINE, RED, SUBTEXT, TEXT, WHITE, chart, load, panel
 
 NOTEBOOK = "11_dashboard_cleaning.ipynb"
-GRID = "rgba(100, 116, 139, 0.25)"
 
 st.title("Data cleaning")
 
 steps = load("cleaning_steps.csv", NOTEBOOK)
-missing = load("missing_values.csv", NOTEBOOK)
+missing = load("missing_values.csv", NOTEBOOK, needs=["became"])
 fills = load("cleaning_fills.csv", NOTEBOOK)
 sample = load("cleaning_sample.csv", NOTEBOOK)
 names = load("model_names.csv", NOTEBOOK)
@@ -25,7 +24,8 @@ cards = st.columns(4)
 cards[0].metric("Raw listings", f"{raw:,}", border=True)
 cards[1].metric("Clean listings", f"{clean:,}", border=True)
 cards[2].metric("Kept", f"{clean / raw:.1%}", border=True)
-cards[3].metric("Columns dropped", int(missing["dropped_at"].notna().sum()), border=True)
+cards[3].metric("Columns dropped", int((missing["how"] == "column dropped").sum()), border=True,
+                help="url, VIN and description aren't counted: they were turned into listing fields first.")
 
 
 # ---------- cleaning funnel ----------
@@ -45,12 +45,12 @@ with panel("Listings removed at each step"):
         textfont=dict(color=TEXT),
         customdata=["Craigslist listings, April–May 2021", *cuts["rule"], "what the model is trained on"],
         hovertemplate="<b>%{y}</b>  %{text}<br>%{customdata}<extra></extra>",
-        decreasing=dict(marker=dict(color=ROSE)),
-        totals=dict(marker=dict(color=TEAL)),
-        connector=dict(line=dict(color=SLATE, width=1)),
+        decreasing=dict(marker=dict(color=RED)),
+        totals=dict(marker=dict(color=GOLD)),
+        connector=dict(line=dict(color=GRAPHITE, width=1)),
     ))
     fig.update_yaxes(autorange="reversed", showgrid=False)
-    fig.update_xaxes(tickformat=",", showgrid=True, gridcolor=GRID, range=[0, raw * 1.12])
+    fig.update_xaxes(tickformat=",", showgrid=True, gridcolor=LINE, range=[0, raw * 1.12])
     fig.update_layout(height=40 * (len(cuts) + 2) + 60, bargap=0.35)
     chart(fig)
 
@@ -66,7 +66,7 @@ st.subheader("What got removed")
 st.caption("A random 20,000 of the raw listings by year and price. Coloured dots were removed by the step in the "
            "legend: click an entry to hide or show it.")
 
-COLOURS = {"$0 price": TEAL, "before 1980": AMBER, "fake price": ROSE, "bad odometer": VIOLET}
+COLOURS = {"$0 price": GOLD, "before 1980": BLUE, "fake price": RED, "bad odometer": GREEN}
 OTHER = "missing values + duplicates"
 ZERO = 0.3  # where $0 prices sit on the log axis
 
@@ -80,7 +80,7 @@ plot = sample.dropna(subset=["year"]).assign(
                      + "<br>" + d["dropped_at"]),
 )
 # drawn back to front (kept at the bottom); the legend lists them the other way round
-groups = [("kept", DARK_SLATE, 0.8), (OTHER, LIGHT_SLATE, 0.5)] + [(g, c, 0.9) for g, c in COLOURS.items()]
+groups = [("kept", WHITE, 0.45), (OTHER, SUBTEXT, 0.5)] + [(g, c, 0.9) for g, c in COLOURS.items()]
 legend_order = [*COLOURS, OTHER, "kept"]
 
 with panel("Raw listings by year and price"):
@@ -95,7 +95,7 @@ with panel("Raw listings by year and price"):
         ))
     ticks = [ZERO, 1, 10, 100, 1e3, 1e4, 1e5, 1e6, 1e7]
     fig.update_yaxes(type="log", tickvals=ticks, ticktext=["$0", "$1", "$10", "$100", "$1k", "$10k", "$100k", "$1M", "$10M"],
-                     range=[np.log10(0.2), np.log10(4e7)], gridcolor=GRID)
+                     range=[np.log10(0.2), np.log10(4e7)], gridcolor=LINE)
     fig.update_xaxes(title=dict(text="model year", standoff=12), showgrid=False)
     fig.update_layout(height=560, legend=dict(orientation="h", y=1.08, x=0))
     chart(fig)
@@ -124,6 +124,8 @@ placeholder = fills.set_index("column")["placeholder"]
 def how(r):
     if r.how == "column dropped":
         return f"column dropped ({r.dropped_at})"
+    if r.how == "turned into listing fields":
+        return f"turned into listing fields: {r.became}"
     if r.how == "filled":
         text = f"filled {r.filled:,.0f}"
         return text + (f" · {r.to_placeholder:,.0f} → '{placeholder[r.column]}'" if r.to_placeholder else "")
@@ -133,33 +135,39 @@ def how(r):
 
 
 rows = missing.sort_values(["raw_missing", "column"], ascending=[True, False])
-kept_cols = rows[rows["how"] != "column dropped"]
+kept_cols = rows[~rows["how"].isin(["column dropped", "turned into listing fields"])]
 dropped_cols = rows[rows["how"] == "column dropped"]
+turned_cols = rows[rows["how"] == "turned into listing fields"]
 
 with panel("Missing values per column, raw → clean"):
     fig = go.Figure()
     fig.add_trace(go.Scatter(  # the line between the two dots
         x=[v for r in kept_cols.itertuples() for v in (r.raw_missing, r.clean_missing, None)],
         y=[v for r in kept_cols.itertuples() for v in (r.column, r.column, None)],
-        mode="lines", line=dict(color=SLATE, width=2), showlegend=False, hoverinfo="skip",
+        mode="lines", line=dict(color=GRAPHITE, width=2), showlegend=False, hoverinfo="skip",
     ))
     fig.add_trace(go.Scatter(
         x=kept_cols["raw_missing"], y=kept_cols["column"], mode="markers", name="raw",
-        marker=dict(color=ROSE, size=10), hovertemplate="%{y}: %{x:.1%} missing in the raw data<extra></extra>",
+        marker=dict(color=RED, size=10), hovertemplate="%{y}: %{x:.1%} missing in the raw data<extra></extra>",
     ))
     fig.add_trace(go.Scatter(
         x=kept_cols["clean_missing"], y=kept_cols["column"], mode="markers", name="clean",
-        marker=dict(color=TEAL, size=10), hovertemplate="%{y}: %{x:.1%} missing after cleaning<extra></extra>",
+        marker=dict(color=GOLD, size=10), hovertemplate="%{y}: %{x:.1%} missing after cleaning<extra></extra>",
     ))
     fig.add_trace(go.Scatter(
         x=dropped_cols["raw_missing"], y=dropped_cols["column"], mode="markers", name="column dropped",
-        marker=dict(color=LIGHT_SLATE, size=10, symbol="x-thin", line=dict(width=2, color=LIGHT_SLATE)),
+        marker=dict(color=SUBTEXT, size=10, symbol="x-thin", line=dict(width=2, color=SUBTEXT)),
         hovertemplate="%{y}: %{x:.1%} missing, column dropped<extra></extra>",
+    ))
+    fig.add_trace(go.Scatter(
+        x=turned_cols["raw_missing"], y=turned_cols["column"], mode="markers", name="turned into listing fields",
+        marker=dict(color=GOLD, size=11, symbol="diamond"), customdata=turned_cols["became"],
+        hovertemplate="%{y}: %{x:.1%} missing, turned into %{customdata}<extra></extra>",
     ))
     for r in rows.itertuples():
         fig.add_annotation(x=1.01, xref="paper", xanchor="left", y=r.column, text=how(r),
-                           showarrow=False, font=dict(color=LIGHT_SLATE, size=12))
-    fig.update_xaxes(tickformat=".0%", range=[-0.03, 1.03], showgrid=True, gridcolor=GRID)
+                           showarrow=False, font=dict(color=SUBTEXT, size=12))
+    fig.update_xaxes(tickformat=".0%", range=[-0.03, 1.03], showgrid=True, gridcolor=LINE)
     fig.update_yaxes(showgrid=False)
     fig.update_layout(height=26 * len(rows) + 80, margin=dict(r=320),
                       legend=dict(orientation="h", y=1.04, x=0))
@@ -184,13 +192,13 @@ left, right = st.columns([3, 2])
 with left, panel("Clean models with the most raw spellings"):
     bars = spellings.assign(label=spellings["manufacturer"] + " " + spellings["model_clean"])
     fig = go.Figure(go.Bar(
-        x=bars["spellings"], y=bars["label"], orientation="h", marker_color=TEAL,
+        x=bars["spellings"], y=bars["label"], orientation="h", marker_color=GOLD,
         text=bars["spellings"], textposition="outside", textfont=dict(color=TEXT),
         customdata=bars["listings"],
         hovertemplate="<b>%{y}</b><br>%{x} spellings · %{customdata:,} listings<extra></extra>",
     ))
     fig.update_yaxes(autorange="reversed", showgrid=False)
-    fig.update_xaxes(showgrid=True, gridcolor=GRID, range=[0, bars["spellings"].max() * 1.12])
+    fig.update_xaxes(showgrid=True, gridcolor=LINE, range=[0, bars["spellings"].max() * 1.12])
     fig.update_layout(height=32 * len(bars) + 40, bargap=0.3)
     chart(fig)
 

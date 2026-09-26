@@ -1,12 +1,14 @@
-# Fair Car Price dashboard theme: dark navy + teal, Space Grotesk
+# Fair Car Price dashboard theme: Graphite & Gold (premium automotive, dark), Space Grotesk
 [theme]
 base = "dark"
-primaryColor = "#14b8a6"
-backgroundColor = "#0f172a"
-secondaryBackgroundColor = "#1e293b"
-textColor = "#e2e8f0"
+primaryColor = "#cf9a30"
+backgroundColor = "#0c0c0e"
+secondaryBackgroundColor = "#161618"
+textColor = "#f2efe8"
+borderColor = "#2a2a2e"
+linkColor = "#cf9a30"
 font = "'Space Grotesk':https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap, sans-serif"
-chartCategoricalColors = ["#14b8a6", "#f59e0b", "#f43f5e", "#64748b"]
-# inline code (e.g. the raw model spellings) as slate chips with light text
-codeTextColor = "#e2e8f0"
-codeBackgroundColor = "#334155"
+chartCategoricalColors = ["#cf9a30", "#5a8fe0", "#e05a3a", "#3fa88f"]
+# inline code (e.g. the raw model spellings) as graphite chips with light text
+codeTextColor = "#f2efe8"
+codeBackgroundColor = "#2a2a2e"

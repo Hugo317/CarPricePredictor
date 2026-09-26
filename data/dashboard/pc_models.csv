@@ -1,0 +1,994 @@
+manufacturer,model,type,drive,fuel,transmission,cylinders,listings
+acura,cl,coupe,fwd,gas,automatic,6,22
+acura,ilx,sedan,fwd,gas,automatic,4,139
+acura,integra,sedan,fwd,gas,automatic,4,17
+acura,mdx,SUV,4wd,gas,automatic,6,674
+acura,nsx,coupe,unknown,gas,automatic,6,8
+acura,other,sedan,fwd,gas,automatic,6,160
+acura,rdx,SUV,unknown,gas,automatic,6,315
+acura,rl,sedan,4wd,gas,automatic,6,63
+acura,rlx,sedan,fwd,gas,automatic,6,25
+acura,rsx,coupe,fwd,gas,automatic,4,41
+acura,tl,sedan,fwd,gas,automatic,6,409
+acura,tlx,sedan,fwd,gas,automatic,6,174
+acura,tsx,sedan,fwd,gas,automatic,4,254
+acura,unknown,coupe,unknown,gas,automatic,6,17
+alfa-romeo,giulia,sedan,rwd,gas,other,4,80
+alfa-romeo,other,convertible,rwd,gas,automatic,4,15
+alfa-romeo,spider,convertible,rwd,gas,manual,4,15
+alfa-romeo,stelvio,hatchback,unknown,gas,other,4,69
+aston-martin,db11,coupe,rwd,gas,automatic,12,3
+aston-martin,db9,convertible,rwd,gas,automatic,12,5
+aston-martin,other,coupe,rwd,gas,automatic,12,9
+audi,a3,sedan,fwd,gas,automatic,4,255
+audi,a4,sedan,4wd,gas,automatic,4,819
+audi,a5,coupe,4wd,gas,automatic,6,302
+audi,a6,sedan,4wd,gas,automatic,6,330
+audi,a7,sedan,4wd,gas,automatic,6,91
+audi,a8,sedan,4wd,gas,automatic,8,102
+audi,allroad,wagon,4wd,gas,automatic,4,51
+audi,other,sedan,4wd,gas,automatic,4,352
+audi,q3,SUV,4wd,gas,automatic,4,81
+audi,q5,SUV,4wd,gas,automatic,6,461
+audi,q7,SUV,4wd,gas,automatic,6,213
+audi,q8,SUV,4wd,gas,automatic,6,14
+audi,r8,coupe,4wd,gas,automatic,8,6
+audi,tt,coupe,unknown,gas,automatic,4,77
+audi,unknown,other,4wd,gas,automatic,10,17
+bentley,bentayga,SUV,4wd,gas,automatic,12,1
+bentley,continental,coupe,4wd,gas,automatic,12,20
+bentley,flying spur,sedan,4wd,gas,automatic,12,13
+bentley,other,sedan,rwd,gas,automatic,12,12
+bmw,1 series,coupe,rwd,gas,automatic,6,92
+bmw,2 series,coupe,rwd,gas,automatic,6,57
+bmw,3 series,sedan,rwd,gas,automatic,6,2206
+bmw,4 series,coupe,rwd,gas,automatic,4,278
+bmw,5 series,sedan,rwd,gas,automatic,6,1088
+bmw,6 series,coupe,rwd,gas,automatic,8,152
+bmw,7 series,sedan,rwd,gas,automatic,8,279
+bmw,8 series,coupe,rwd,gas,automatic,12,4
+bmw,i3,hatchback,rwd,electric,other,other,55
+bmw,i8,coupe,rwd,gas,automatic,3,5
+bmw,other,sedan,4wd,gas,automatic,6,615
+bmw,unknown,sedan,unknown,gas,automatic,6,74
+bmw,x1,SUV,4wd,gas,automatic,4,230
+bmw,x2,SUV,4wd,gas,automatic,4,25
+bmw,x3,SUV,4wd,gas,automatic,4,513
+bmw,x4,SUV,4wd,gas,automatic,6,35
+bmw,x5,SUV,4wd,gas,automatic,6,738
+bmw,x6,SUV,unknown,gas,automatic,8,99
+bmw,x7,SUV,unknown,gas,automatic,8,2
+bmw,z3,convertible,rwd,gas,manual,6,91
+bmw,z4,convertible,rwd,gas,automatic,6,94
+buick,cascada,convertible,fwd,gas,automatic,4,12
+buick,century,sedan,fwd,gas,automatic,6,131
+buick,enclave,SUV,fwd,gas,automatic,6,565
+buick,encore,SUV,fwd,gas,automatic,4,309
+buick,encore gx,SUV,fwd,gas,other,3,24
+buick,envision,SUV,unknown,gas,automatic,4,77
+buick,lacrosse,sedan,fwd,gas,automatic,6,367
+buick,lesabre,sedan,fwd,gas,automatic,6,225
+buick,lucerne,sedan,fwd,gas,automatic,6,214
+buick,other,sedan,fwd,gas,automatic,6,150
+buick,park avenue,sedan,fwd,gas,automatic,6,50
+buick,rainier,SUV,4wd,gas,automatic,6,15
+buick,reatta,coupe,fwd,gas,automatic,6,20
+buick,regal,sedan,fwd,gas,automatic,4,180
+buick,rendezvous,SUV,fwd,gas,automatic,6,85
+buick,riviera,coupe,fwd,gas,automatic,6,28
+buick,roadmaster,sedan,rwd,gas,automatic,8,20
+buick,skylark,sedan,fwd,gas,automatic,4,4
+buick,terraza,mini-van,fwd,gas,automatic,6,20
+buick,unknown,coupe,unknown,gas,automatic,6,28
+buick,verano,sedan,fwd,gas,automatic,4,121
+cadillac,allante,convertible,fwd,gas,automatic,8,23
+cadillac,ats,sedan,rwd,gas,automatic,4,214
+cadillac,brougham,sedan,rwd,gas,automatic,8,10
+cadillac,ct4,sedan,rwd,gas,automatic,4,11
+cadillac,ct6,sedan,4wd,gas,automatic,6,21
+cadillac,cts,sedan,unknown,gas,automatic,6,500
+cadillac,deville,sedan,fwd,gas,automatic,8,238
+cadillac,dts,sedan,fwd,gas,automatic,8,194
+cadillac,eldorado,coupe,fwd,gas,automatic,8,66
+cadillac,escalade,SUV,4wd,gas,automatic,8,651
+cadillac,escalade ext,pickup,4wd,gas,automatic,8,28
+cadillac,fleetwood,sedan,unknown,gas,automatic,8,31
+cadillac,other,sedan,4wd,gas,automatic,8,223
+cadillac,seville,sedan,fwd,gas,automatic,8,49
+cadillac,srx,SUV,fwd,gas,automatic,6,401
+cadillac,sts,sedan,unknown,gas,automatic,6,64
+cadillac,unknown,sedan,unknown,gas,automatic,8,44
+cadillac,xlr,convertible,rwd,gas,automatic,8,19
+cadillac,xt4,hatchback,fwd,gas,other,4,63
+cadillac,xt5,SUV,fwd,gas,automatic,6,131
+cadillac,xt6,other,fwd,gas,automatic,6,23
+cadillac,xts,sedan,fwd,gas,automatic,6,154
+chevrolet,astro,van,rwd,gas,automatic,6,74
+chevrolet,avalanche,pickup,4wd,gas,automatic,8,364
+chevrolet,aveo,sedan,fwd,gas,automatic,4,141
+chevrolet,bel air,sedan,rwd,gas,automatic,8,1
+chevrolet,blazer,SUV,4wd,gas,automatic,6,220
+chevrolet,bolt,hatchback,fwd,electric,automatic,other,30
+chevrolet,c/k 10,pickup,unknown,gas,automatic,8,56
+chevrolet,c/k 1500,pickup,rwd,gas,automatic,8,37
+chevrolet,c/k 20,pickup,rwd,gas,automatic,8,16
+chevrolet,c/k 2500,pickup,rwd,gas,automatic,8,13
+chevrolet,c/k 30,pickup,4wd,gas,automatic,8,15
+chevrolet,c/k 3500,pickup,4wd,gas,automatic,8,29
+chevrolet,c70,pickup,4wd,gas,manual,8,3
+chevrolet,camaro,coupe,rwd,gas,automatic,8,966
+chevrolet,caprice,sedan,rwd,gas,automatic,8,40
+chevrolet,captiva,SUV,fwd,gas,automatic,4,85
+chevrolet,cavalier,coupe,fwd,gas,automatic,4,71
+chevrolet,chevelle,sedan,rwd,gas,automatic,8,1
+chevrolet,chevy van,van,rwd,gas,automatic,8,23
+chevrolet,city express,van,fwd,gas,automatic,4,24
+chevrolet,cobalt,sedan,fwd,gas,automatic,4,296
+chevrolet,colorado,pickup,4wd,gas,automatic,6,571
+chevrolet,corvette,coupe,rwd,gas,automatic,8,1085
+chevrolet,cruze,sedan,fwd,gas,automatic,4,1411
+chevrolet,el camino,pickup,rwd,gas,automatic,8,62
+chevrolet,equinox,SUV,fwd,gas,automatic,4,1699
+chevrolet,express,van,rwd,gas,automatic,8,796
+chevrolet,hhr,wagon,fwd,gas,automatic,4,251
+chevrolet,impala,sedan,fwd,gas,automatic,6,1545
+chevrolet,kodiak,pickup,unknown,diesel,automatic,8,70
+chevrolet,low cab forward,pickup,rwd,gas,automatic,8,2
+chevrolet,lumina,sedan,fwd,gas,automatic,6,22
+chevrolet,luv,pickup,rwd,gas,manual,4,3
+chevrolet,malibu,sedan,fwd,gas,automatic,4,1475
+chevrolet,monte carlo,coupe,fwd,gas,automatic,6,117
+chevrolet,other,pickup,4wd,gas,automatic,8,1259
+chevrolet,p30,pickup,rwd,gas,automatic,8,12
+chevrolet,prizm,sedan,fwd,gas,automatic,4,17
+chevrolet,s-10,pickup,rwd,gas,automatic,6,196
+chevrolet,silverado,pickup,4wd,gas,automatic,8,1954
+chevrolet,silverado 1500,pickup,4wd,gas,automatic,8,3536
+chevrolet,silverado 2500,pickup,4wd,gas,automatic,8,1322
+chevrolet,silverado 3500,pickup,4wd,diesel,automatic,8,475
+chevrolet,silverado 5500,pickup,rwd,diesel,automatic,8,4
+chevrolet,sonic,sedan,fwd,gas,automatic,4,345
+chevrolet,spark,hatchback,fwd,gas,automatic,4,213
+chevrolet,ss,sedan,rwd,gas,automatic,8,17
+chevrolet,ssr,pickup,rwd,gas,automatic,8,33
+chevrolet,suburban,SUV,4wd,gas,automatic,8,947
+chevrolet,tahoe,SUV,4wd,gas,automatic,8,1406
+chevrolet,tracker,SUV,4wd,gas,automatic,4,33
+chevrolet,trailblazer,SUV,4wd,gas,automatic,6,534
+chevrolet,traverse,SUV,fwd,gas,automatic,6,790
+chevrolet,trax,hatchback,fwd,gas,automatic,4,296
+chevrolet,unknown,other,unknown,gas,automatic,8,478
+chevrolet,uplander,mini-van,fwd,gas,automatic,6,78
+chevrolet,venture,mini-van,fwd,gas,automatic,6,43
+chevrolet,volt,hatchback,fwd,hybrid,automatic,4,140
+chevrolet,w4500,pickup,rwd,gas,automatic,8,6
+chrysler,200,sedan,fwd,gas,automatic,4,616
+chrysler,300,sedan,rwd,gas,automatic,6,656
+chrysler,300m,sedan,fwd,gas,automatic,6,18
+chrysler,aspen,SUV,4wd,gas,automatic,8,32
+chrysler,cirrus,sedan,fwd,gas,automatic,6,3
+chrysler,concorde,sedan,fwd,gas,automatic,6,22
+chrysler,cordoba,coupe,rwd,gas,automatic,8,1
+chrysler,crossfire,coupe,rwd,gas,automatic,6,66
+chrysler,fifth avenue,sedan,rwd,gas,automatic,8,5
+chrysler,imperial,sedan,rwd,gas,automatic,6,5
+chrysler,lebaron,convertible,fwd,gas,automatic,4,14
+chrysler,lhs,sedan,fwd,gas,automatic,6,4
+chrysler,new yorker,sedan,fwd,gas,automatic,8,5
+chrysler,other,sedan,fwd,gas,automatic,6,177
+chrysler,pacifica,van,fwd,gas,automatic,6,268
+chrysler,prowler,convertible,rwd,gas,automatic,6,2
+chrysler,pt cruiser,hatchback,fwd,gas,automatic,4,306
+chrysler,sebring,convertible,fwd,gas,automatic,6,247
+chrysler,tc,convertible,fwd,gas,automatic,6,11
+chrysler,town and country,mini-van,fwd,gas,automatic,6,901
+chrysler,unknown,mini-van,fwd,gas,automatic,6,37
+chrysler,voyager,van,fwd,gas,automatic,6,12
+datsun,280zx,coupe,rwd,gas,manual,6,13
+datsun,other,coupe,rwd,gas,manual,6,6
+dodge,aspen,unknown,rwd,gas,automatic,8,1
+dodge,avenger,sedan,fwd,gas,automatic,4,301
+dodge,caliber,hatchback,fwd,gas,automatic,4,168
+dodge,caravan,mini-van,fwd,gas,automatic,6,112
+dodge,challenger,coupe,rwd,gas,automatic,8,627
+dodge,charger,sedan,rwd,gas,automatic,6,977
+dodge,d100,pickup,rwd,gas,automatic,6,4
+dodge,d150,pickup,rwd,gas,automatic,8,4
+dodge,d250,pickup,rwd,diesel,automatic,8,7
+dodge,dakota,pickup,4wd,gas,automatic,8,415
+dodge,dart,sedan,fwd,gas,automatic,4,335
+dodge,diplomat,sedan,rwd,gas,automatic,8,4
+dodge,durango,SUV,4wd,gas,automatic,6,631
+dodge,grand caravan,mini-van,fwd,gas,automatic,6,1280
+dodge,intrepid,sedan,fwd,gas,automatic,6,13
+dodge,journey,SUV,fwd,gas,automatic,6,629
+dodge,magnum,wagon,rwd,gas,automatic,6,46
+dodge,neon,sedan,fwd,gas,automatic,4,47
+dodge,nitro,SUV,4wd,gas,automatic,6,132
+dodge,other,SUV,fwd,gas,automatic,6,414
+dodge,promaster,van,fwd,gas,automatic,6,4
+dodge,ram 1500,pickup,4wd,gas,automatic,8,11
+dodge,ram 2500,pickup,4wd,diesel,automatic,6,22
+dodge,ram 3500,pickup,4wd,diesel,automatic,6,23
+dodge,ram van,unknown,rwd,gas,automatic,8,3
+dodge,ramcharger,SUV,4wd,gas,automatic,8,11
+dodge,rampage,pickup,fwd,gas,manual,4,2
+dodge,sprinter,van,rwd,diesel,automatic,5,39
+dodge,stealth,coupe,fwd,gas,manual,6,15
+dodge,stratus,sedan,fwd,gas,automatic,6,54
+dodge,unknown,other,unknown,gas,automatic,8,99
+dodge,viper,convertible,rwd,gas,manual,10,12
+dodge,w150,pickup,4wd,gas,automatic,8,2
+dodge,w250,pickup,4wd,diesel,automatic,6,4
+ferrari,360,convertible,rwd,gas,automatic,8,4
+ferrari,458,convertible,rwd,gas,automatic,8,5
+ferrari,california,convertible,rwd,gas,automatic,8,2
+ferrari,f355,convertible,unknown,gas,manual,8,2
+ferrari,other,convertible,rwd,gas,automatic,8,15
+ferrari,unknown,other,fwd,other,automatic,8,1
+fiat,124 spider,convertible,rwd,gas,manual,4,34
+fiat,500,hatchback,fwd,gas,automatic,4,219
+fiat,500l,hatchback,fwd,gas,automatic,4,36
+fiat,500x,SUV,fwd,gas,automatic,4,27
+fiat,other,hatchback,fwd,gas,automatic,4,34
+fiat,unknown,other,fwd,gas,automatic,4,5
+fiat,x1/9,convertible,rwd,gas,manual,4,2
+ford,aerostar,van,rwd,gas,automatic,6,8
+ford,bronco,SUV,4wd,gas,automatic,8,110
+ford,bronco ii,SUV,4wd,gas,automatic,6,30
+ford,bronco sport,SUV,4wd,gas,automatic,3,5
+ford,c-max,wagon,fwd,hybrid,automatic,4,142
+ford,cf8000,pickup,rwd,diesel,automatic,8,3
+ford,contour,sedan,fwd,gas,automatic,4,4
+ford,country squire,wagon,rwd,gas,automatic,8,3
+ford,crown victoria,sedan,rwd,gas,automatic,8,217
+ford,e-150,van,rwd,gas,automatic,8,169
+ford,e-250,van,rwd,gas,automatic,8,209
+ford,e-350,van,rwd,gas,automatic,8,414
+ford,e-450,bus,rwd,gas,automatic,10,112
+ford,e-series,van,rwd,gas,automatic,8,269
+ford,ecosport,hatchback,4wd,gas,automatic,4,129
+ford,edge,SUV,4wd,gas,automatic,6,1151
+ford,escape,SUV,4wd,gas,automatic,4,2377
+ford,escort,sedan,fwd,gas,automatic,4,33
+ford,excursion,SUV,4wd,gas,automatic,8,180
+ford,expedition,SUV,4wd,gas,automatic,8,1000
+ford,explorer,SUV,4wd,gas,automatic,6,2035
+ford,explorer sport trac,pickup,4wd,gas,automatic,6,153
+ford,f-100,pickup,rwd,gas,automatic,6,11
+ford,f-150,pickup,4wd,gas,automatic,6,6839
+ford,f-250,pickup,4wd,diesel,automatic,8,2809
+ford,f-350,pickup,4wd,diesel,automatic,8,2141
+ford,f-450,pickup,4wd,diesel,automatic,8,377
+ford,f-550,pickup,4wd,diesel,automatic,8,372
+ford,f-600,pickup,rwd,diesel,manual,6,5
+ford,f-650,pickup,rwd,diesel,automatic,6,59
+ford,f-700,pickup,rwd,diesel,automatic,8,10
+ford,f-7000,pickup,fwd,diesel,manual,8,2
+ford,f-750,pickup,rwd,diesel,automatic,6,48
+ford,f-800,pickup,rwd,diesel,automatic,6,35
+ford,fiesta,sedan,fwd,gas,automatic,4,460
+ford,five hundred,sedan,fwd,gas,automatic,6,63
+ford,flex,SUV,fwd,gas,automatic,6,347
+ford,focus,sedan,fwd,gas,automatic,4,1927
+ford,freestar,mini-van,fwd,gas,automatic,6,70
+ford,freestyle,SUV,unknown,gas,automatic,6,67
+ford,fusion,sedan,fwd,gas,automatic,4,1813
+ford,l8000,pickup,rwd,diesel,manual,6,5
+ford,lcf,pickup,rwd,diesel,automatic,6,9
+ford,mustang,coupe,rwd,gas,automatic,8,1814
+ford,other,pickup,4wd,gas,automatic,8,1962
+ford,pinto,sedan,rwd,gas,automatic,4,1
+ford,ranger,pickup,rwd,gas,automatic,6,846
+ford,taurus,sedan,fwd,gas,automatic,6,835
+ford,taurus x,SUV,unknown,gas,automatic,6,12
+ford,tempo,other,fwd,gas,automatic,4,4
+ford,thunderbird,convertible,rwd,gas,automatic,8,120
+ford,transit,van,rwd,gas,automatic,6,582
+ford,transit connect,van,fwd,gas,automatic,4,372
+ford,unknown,other,unknown,gas,automatic,8,363
+ford,windstar,mini-van,fwd,gas,automatic,6,48
+freightliner,cascadia,other,unknown,diesel,manual,6,22
+freightliner,classic,pickup,rwd,diesel,manual,6,3
+freightliner,coronado,pickup,unknown,diesel,manual,6,2
+freightliner,fl60,pickup,rwd,diesel,automatic,8,7
+freightliner,fl70,pickup,rwd,diesel,automatic,6,10
+freightliner,m-line,pickup,rwd,diesel,automatic,4,2
+freightliner,m2,pickup,rwd,diesel,automatic,6,114
+freightliner,mt45,pickup,unknown,diesel,automatic,6,14
+freightliner,other,pickup,rwd,diesel,automatic,6,52
+freightliner,sprinter,van,rwd,diesel,automatic,6,18
+freightliner,unknown,pickup,unknown,diesel,automatic,6,31
+genesis,g70,sedan,rwd,gas,other,6,35
+genesis,g80,sedan,rwd,gas,other,6,53
+genesis,g90,sedan,rwd,gas,automatic,6,9
+genesis,other,sedan,rwd,gas,automatic,6,16
+gmc,acadia,SUV,4wd,gas,automatic,6,816
+gmc,brigadier,pickup,rwd,diesel,automatic,6,4
+gmc,caballero,pickup,rwd,gas,automatic,8,5
+gmc,canyon,pickup,4wd,gas,automatic,6,128
+gmc,envoy,SUV,4wd,gas,automatic,6,242
+gmc,jimmy,SUV,4wd,gas,automatic,6,30
+gmc,other,pickup,4wd,gas,automatic,8,667
+gmc,safari,van,rwd,gas,automatic,6,22
+gmc,savana,van,rwd,gas,automatic,8,230
+gmc,sierra 1500,pickup,4wd,gas,automatic,8,2061
+gmc,sierra 2500,pickup,4wd,diesel,automatic,8,644
+gmc,sierra 3500,pickup,4wd,diesel,automatic,8,264
+gmc,sonoma,pickup,4wd,gas,automatic,6,59
+gmc,suburban,SUV,4wd,gas,automatic,8,39
+gmc,terrain,SUV,fwd,gas,automatic,4,653
+gmc,topkick,pickup,rwd,diesel,automatic,8,132
+gmc,unknown,pickup,unknown,gas,automatic,8,161
+gmc,vandura,van,rwd,gas,automatic,8,13
+gmc,w4500,pickup,rwd,diesel,automatic,8,15
+gmc,yukon,SUV,4wd,gas,automatic,8,821
+gmc,yukon xl,SUV,4wd,gas,automatic,8,407
+harley-davidson,other,other,unknown,gas,automatic,other,30
+harley-davidson,unknown,pickup,unknown,gas,automatic,8,41
+hino,165,van,rwd,diesel,automatic,4,1
+hino,195,pickup,rwd,diesel,automatic,4,9
+hino,258,pickup,rwd,diesel,automatic,6,8
+hino,268,pickup,rwd,diesel,automatic,6,24
+hino,338,pickup,rwd,diesel,automatic,6,11
+hino,other,pickup,rwd,diesel,automatic,6,9
+hino,unknown,unknown,rwd,diesel,automatic,6,4
+honda,accord,sedan,fwd,gas,automatic,4,3301
+honda,acty,pickup,4wd,gas,manual,3,5
+honda,beat,convertible,rwd,gas,manual,3,2
+honda,civic,sedan,fwd,gas,automatic,4,3144
+honda,clarity,sedan,fwd,electric,automatic,4,11
+honda,cr-v,SUV,4wd,gas,automatic,4,2056
+honda,cr-z,hatchback,fwd,hybrid,automatic,4,37
+honda,crosstour,hatchback,4wd,gas,automatic,6,77
+honda,crx,coupe,fwd,gas,manual,4,7
+honda,del sol,convertible,fwd,gas,manual,4,13
+honda,element,SUV,4wd,gas,automatic,4,214
+honda,fit,hatchback,fwd,gas,automatic,4,467
+honda,hr-v,SUV,4wd,gas,automatic,4,134
+honda,insight,sedan,fwd,hybrid,automatic,4,76
+honda,odyssey,mini-van,fwd,gas,automatic,6,1416
+honda,other,sedan,fwd,gas,automatic,4,524
+honda,passport,SUV,4wd,gas,automatic,6,35
+honda,pilot,SUV,4wd,gas,automatic,6,1024
+honda,prelude,coupe,fwd,gas,automatic,4,27
+honda,ridgeline,pickup,4wd,gas,automatic,6,209
+honda,s2000,convertible,rwd,gas,manual,4,28
+honda,unknown,sedan,unknown,gas,automatic,4,80
+hummer,h1,SUV,4wd,diesel,automatic,8,7
+hummer,h2,SUV,4wd,gas,automatic,8,130
+hummer,h3,SUV,4wd,gas,automatic,5,113
+hummer,other,SUV,4wd,gas,automatic,8,27
+hyundai,accent,sedan,fwd,gas,automatic,4,364
+hyundai,azera,sedan,fwd,gas,automatic,6,58
+hyundai,elantra,sedan,fwd,gas,automatic,4,1226
+hyundai,entourage,mini-van,fwd,gas,automatic,6,27
+hyundai,equus,sedan,rwd,gas,automatic,8,29
+hyundai,genesis,sedan,rwd,gas,automatic,6,165
+hyundai,genesis coupe,coupe,rwd,gas,automatic,6,62
+hyundai,ioniq,hatchback,fwd,hybrid,other,4,43
+hyundai,kona,SUV,unknown,gas,automatic,4,67
+hyundai,other,sedan,fwd,gas,automatic,4,210
+hyundai,palisade,other,fwd,gas,other,6,12
+hyundai,santa fe,SUV,fwd,gas,automatic,6,880
+hyundai,sonata,sedan,fwd,gas,automatic,4,1376
+hyundai,tiburon,coupe,fwd,gas,automatic,6,29
+hyundai,tucson,SUV,fwd,gas,automatic,4,439
+hyundai,unknown,sedan,fwd,gas,automatic,4,23
+hyundai,veloster,coupe,fwd,gas,automatic,4,245
+hyundai,venue,hatchback,fwd,gas,other,4,10
+hyundai,veracruz,SUV,fwd,gas,automatic,6,43
+hyundai,xg350,sedan,fwd,gas,automatic,6,14
+infiniti,ex,SUV,4wd,gas,automatic,6,40
+infiniti,fx,SUV,4wd,gas,automatic,6,121
+infiniti,g,sedan,rwd,gas,automatic,6,528
+infiniti,i,sedan,fwd,gas,automatic,6,30
+infiniti,jx,SUV,unknown,gas,automatic,6,40
+infiniti,m,sedan,4wd,gas,automatic,6,123
+infiniti,other,sedan,4wd,gas,automatic,6,158
+infiniti,q40,sedan,unknown,gas,automatic,6,11
+infiniti,q45,sedan,rwd,gas,automatic,8,12
+infiniti,q50,sedan,rwd,gas,automatic,6,224
+infiniti,q60,coupe,unknown,gas,other,6,58
+infiniti,q70,sedan,unknown,gas,automatic,6,40
+infiniti,qx30,hatchback,fwd,gas,automatic,4,34
+infiniti,qx4,SUV,4wd,gas,automatic,6,13
+infiniti,qx50,hatchback,unknown,gas,automatic,6,90
+infiniti,qx56,SUV,4wd,gas,automatic,8,116
+infiniti,qx60,SUV,4wd,gas,automatic,6,186
+infiniti,qx70,SUV,rwd,gas,automatic,6,30
+infiniti,qx80,SUV,4wd,gas,automatic,8,101
+infiniti,unknown,sedan,4wd,gas,automatic,6,18
+international,3000,bus,rwd,diesel,automatic,8,4
+international,4000,other,unknown,diesel,automatic,other,2
+international,4200,pickup,rwd,diesel,automatic,8,9
+international,4300,pickup,rwd,diesel,automatic,6,113
+international,4400,pickup,rwd,diesel,automatic,6,17
+international,4600,pickup,rwd,diesel,automatic,8,3
+international,4700,pickup,rwd,diesel,manual,8,51
+international,4900,pickup,rwd,diesel,manual,6,19
+international,7300,pickup,4wd,diesel,automatic,6,7
+international,7400,pickup,4wd,diesel,automatic,6,11
+international,7500,pickup,rwd,diesel,other,6,4
+international,durastar,pickup,rwd,diesel,automatic,6,3
+international,other,pickup,rwd,diesel,automatic,6,71
+international,prostar,pickup,rwd,diesel,manual,6,25
+international,terrastar,pickup,rwd,diesel,automatic,8,16
+international,unknown,bus,rwd,diesel,automatic,6,85
+isuzu,ascender,SUV,4wd,gas,automatic,6,7
+isuzu,hombre,pickup,rwd,gas,automatic,4,3
+isuzu,npr,pickup,rwd,diesel,automatic,4,143
+isuzu,nqr,pickup,rwd,diesel,automatic,4,20
+isuzu,nrr,pickup,rwd,diesel,automatic,4,17
+isuzu,other,pickup,rwd,diesel,automatic,4,61
+isuzu,rodeo,SUV,4wd,gas,automatic,6,25
+isuzu,trooper,SUV,4wd,gas,automatic,6,26
+isuzu,unknown,pickup,rwd,diesel,automatic,4,10
+isuzu,vehicross,SUV,4wd,gas,automatic,6,5
+jaguar,e-pace,SUV,4wd,gas,other,4,26
+jaguar,e-type,coupe,rwd,gas,other,8,1
+jaguar,f-pace,SUV,4wd,gas,automatic,6,46
+jaguar,f-type,convertible,rwd,gas,automatic,6,17
+jaguar,other,sedan,rwd,gas,automatic,8,107
+jaguar,s-type,sedan,rwd,gas,automatic,6,43
+jaguar,unknown,sedan,unknown,gas,automatic,8,16
+jaguar,x-type,sedan,4wd,gas,automatic,6,46
+jaguar,xe,sedan,rwd,gas,other,6,49
+jaguar,xf,sedan,rwd,gas,automatic,8,76
+jaguar,xj,sedan,rwd,gas,automatic,8,148
+jaguar,xjs,convertible,rwd,gas,automatic,6,22
+jaguar,xk,convertible,rwd,gas,automatic,8,60
+jeep,cherokee,SUV,4wd,gas,automatic,6,916
+jeep,cj,SUV,4wd,gas,manual,6,69
+jeep,comanche,pickup,4wd,gas,manual,6,15
+jeep,commander,SUV,4wd,gas,automatic,8,132
+jeep,compass,SUV,4wd,gas,automatic,4,547
+jeep,dj-5,other,rwd,gas,automatic,4,1
+jeep,gladiator,pickup,4wd,gas,automatic,6,92
+jeep,grand cherokee,SUV,4wd,gas,automatic,6,2156
+jeep,grand wagoneer,SUV,4wd,gas,automatic,8,19
+jeep,j20,pickup,4wd,gas,automatic,8,2
+jeep,liberty,SUV,4wd,gas,automatic,6,694
+jeep,other,SUV,4wd,gas,automatic,6,391
+jeep,patriot,SUV,4wd,gas,automatic,4,570
+jeep,renegade,SUV,4wd,gas,automatic,4,368
+jeep,unknown,SUV,4wd,gas,automatic,6,65
+jeep,wagoneer,SUV,4wd,gas,automatic,8,7
+jeep,wrangler,SUV,4wd,gas,automatic,6,3346
+kenworth,other,pickup,rwd,diesel,manual,6,6
+kenworth,t270,pickup,rwd,diesel,automatic,6,4
+kenworth,t300,pickup,rwd,diesel,automatic,8,7
+kenworth,t660,pickup,4wd,diesel,manual,6,4
+kenworth,t680,pickup,rwd,diesel,automatic,6,9
+kenworth,t800,pickup,rwd,diesel,manual,6,6
+kenworth,w900,other,rwd,diesel,manual,6,6
+kia,amanti,sedan,fwd,gas,automatic,6,28
+kia,borrego,SUV,4wd,gas,automatic,6,14
+kia,cadenza,sedan,fwd,gas,automatic,6,43
+kia,forte,sedan,fwd,gas,automatic,4,533
+kia,k5,sedan,fwd,gas,automatic,4,6
+kia,k900,sedan,rwd,gas,other,6,11
+kia,niro,wagon,fwd,gas,automatic,4,66
+kia,optima,sedan,fwd,gas,automatic,4,780
+kia,other,sedan,fwd,gas,automatic,4,207
+kia,rio,sedan,fwd,gas,automatic,4,215
+kia,rondo,wagon,fwd,gas,automatic,4,35
+kia,sedona,mini-van,fwd,gas,automatic,6,172
+kia,seltos,SUV,4wd,gas,automatic,4,6
+kia,sorento,SUV,fwd,gas,automatic,6,642
+kia,soul,wagon,fwd,gas,automatic,4,889
+kia,spectra,sedan,fwd,gas,automatic,4,76
+kia,sportage,SUV,fwd,gas,automatic,4,394
+kia,stinger,sedan,unknown,gas,automatic,6,34
+kia,telluride,SUV,unknown,gas,automatic,6,20
+kia,unknown,sedan,unknown,gas,automatic,4,19
+land rover,other,SUV,4wd,gas,automatic,8,11
+lexus,ct,hatchback,fwd,hybrid,automatic,4,97
+lexus,es,sedan,fwd,gas,automatic,6,732
+lexus,gs,sedan,rwd,gas,automatic,6,273
+lexus,gx,SUV,4wd,gas,automatic,8,244
+lexus,hs,sedan,fwd,hybrid,automatic,4,23
+lexus,is,sedan,rwd,gas,automatic,6,508
+lexus,lc,coupe,rwd,gas,automatic,8,3
+lexus,ls,sedan,rwd,gas,automatic,8,296
+lexus,lx,SUV,4wd,gas,automatic,8,88
+lexus,nx,hatchback,fwd,gas,automatic,4,142
+lexus,other,sedan,4wd,gas,automatic,6,230
+lexus,rc,coupe,rwd,gas,automatic,6,63
+lexus,rx,SUV,4wd,gas,automatic,6,976
+lexus,sc,convertible,rwd,gas,automatic,8,109
+lexus,unknown,SUV,unknown,gas,automatic,8,37
+lexus,ux,hatchback,fwd,gas,other,4,19
+lincoln,aviator,SUV,4wd,gas,automatic,8,27
+lincoln,blackwood,pickup,rwd,gas,automatic,8,7
+lincoln,continental,sedan,fwd,gas,automatic,6,82
+lincoln,corsair,other,fwd,gas,other,4,18
+lincoln,ls,sedan,rwd,gas,automatic,8,42
+lincoln,mark lt,pickup,4wd,gas,automatic,8,21
+lincoln,mark vi,sedan,rwd,gas,automatic,8,3
+lincoln,mark vii,coupe,rwd,gas,automatic,8,4
+lincoln,mark viii,coupe,rwd,gas,automatic,8,11
+lincoln,mkc,SUV,fwd,gas,automatic,4,112
+lincoln,mks,sedan,fwd,gas,automatic,6,96
+lincoln,mkt,SUV,unknown,gas,automatic,6,47
+lincoln,mkx,SUV,fwd,gas,automatic,6,212
+lincoln,mkz,sedan,fwd,gas,automatic,6,335
+lincoln,nautilus,other,unknown,gas,other,6,29
+lincoln,navigator,SUV,4wd,gas,automatic,6,232
+lincoln,other,sedan,4wd,gas,automatic,8,102
+lincoln,town car,sedan,rwd,gas,automatic,8,291
+lincoln,unknown,sedan,unknown,gas,automatic,8,20
+lincoln,zephyr,sedan,fwd,gas,automatic,6,14
+mack,granite,unknown,rwd,diesel,automatic,6,2
+mack,other,pickup,rwd,diesel,manual,6,18
+mack,unknown,pickup,rwd,diesel,manual,6,14
+maserati,ghibli,sedan,rwd,gas,automatic,6,64
+maserati,granturismo,coupe,rwd,gas,automatic,8,28
+maserati,levante,SUV,4wd,gas,automatic,6,15
+maserati,other,coupe,rwd,gas,automatic,8,19
+maserati,quattroporte,sedan,rwd,gas,automatic,8,36
+maserati,spyder,convertible,rwd,gas,automatic,8,2
+maserati,unknown,other,fwd,gas,automatic,8,6
+mazda,626,sedan,fwd,gas,automatic,4,8
+mazda,b-series,pickup,rwd,gas,automatic,6,41
+mazda,cx-3,hatchback,fwd,gas,automatic,4,49
+mazda,cx-5,SUV,fwd,gas,automatic,4,285
+mazda,cx-7,SUV,fwd,gas,automatic,4,89
+mazda,cx-9,SUV,4wd,gas,automatic,6,215
+mazda,mazda2,hatchback,fwd,gas,automatic,4,55
+mazda,mazda3,sedan,fwd,gas,automatic,4,832
+mazda,mazda5,mini-van,fwd,gas,automatic,4,135
+mazda,mazda6,sedan,fwd,gas,automatic,4,352
+mazda,millenia,sedan,fwd,gas,automatic,6,5
+mazda,mpv,mini-van,fwd,gas,automatic,6,27
+mazda,mx-5 miata,convertible,rwd,gas,manual,4,263
+mazda,other,sedan,fwd,gas,automatic,4,231
+mazda,protege,sedan,fwd,gas,automatic,4,40
+mazda,rx-7,coupe,rwd,gas,manual,other,14
+mazda,rx-8,coupe,rwd,gas,manual,other,50
+mazda,tribute,SUV,4wd,gas,automatic,6,70
+mazda,unknown,pickup,unknown,gas,automatic,4,28
+mercedes-benz,amg gt,coupe,rwd,gas,automatic,8,6
+mercedes-benz,b-class,hatchback,fwd,electric,other,other,7
+mercedes-benz,c-class,sedan,unknown,gas,automatic,4,1041
+mercedes-benz,cl-class,coupe,rwd,gas,automatic,8,33
+mercedes-benz,cla-class,sedan,fwd,gas,automatic,4,195
+mercedes-benz,clk-class,convertible,rwd,gas,automatic,6,122
+mercedes-benz,cls-class,coupe,rwd,gas,automatic,8,148
+mercedes-benz,e-class,sedan,rwd,gas,automatic,6,938
+mercedes-benz,g-class,SUV,4wd,gas,automatic,8,20
+mercedes-benz,gl-class,SUV,4wd,gas,automatic,8,205
+mercedes-benz,gla-class,SUV,unknown,gas,automatic,4,112
+mercedes-benz,glc-class,SUV,rwd,gas,automatic,4,139
+mercedes-benz,gle-class,SUV,unknown,gas,automatic,6,114
+mercedes-benz,glk-class,SUV,unknown,gas,automatic,6,189
+mercedes-benz,gls-class,SUV,4wd,gas,automatic,6,56
+mercedes-benz,m-class,SUV,4wd,gas,automatic,6,374
+mercedes-benz,metris,van,rwd,gas,automatic,4,10
+mercedes-benz,other,sedan,rwd,gas,automatic,6,708
+mercedes-benz,r-class,SUV,4wd,gas,automatic,6,39
+mercedes-benz,s-class,sedan,rwd,gas,automatic,8,375
+mercedes-benz,sl-class,convertible,rwd,gas,automatic,8,256
+mercedes-benz,slc-class,convertible,rwd,gas,automatic,6,3
+mercedes-benz,slk-class,convertible,rwd,gas,automatic,6,96
+mercedes-benz,sprinter,van,rwd,diesel,automatic,6,118
+mercedes-benz,unknown,sedan,unknown,gas,automatic,8,234
+mercury,capri,convertible,fwd,gas,manual,4,11
+mercury,cougar,coupe,rwd,gas,automatic,6,22
+mercury,grand marquis,sedan,rwd,gas,automatic,8,219
+mercury,mariner,SUV,4wd,gas,automatic,6,102
+mercury,milan,sedan,fwd,gas,automatic,6,73
+mercury,montego,sedan,unknown,gas,automatic,6,14
+mercury,monterey,mini-van,fwd,gas,automatic,6,9
+mercury,mountaineer,SUV,4wd,gas,automatic,6,88
+mercury,other,SUV,fwd,gas,automatic,6,51
+mercury,sable,sedan,fwd,gas,automatic,6,99
+mercury,unknown,sedan,rwd,gas,automatic,6,7
+mercury,villager,mini-van,fwd,gas,automatic,6,15
+mg,mgb,convertible,rwd,gas,manual,4,1
+mg,other,convertible,rwd,gas,manual,4,3
+mg,td,convertible,rwd,gas,manual,4,1
+mini,clubman,hatchback,fwd,gas,automatic,4,113
+mini,convertible,convertible,fwd,gas,automatic,4,68
+mini,cooper,hatchback,fwd,gas,automatic,4,663
+mini,countryman,hatchback,fwd,gas,automatic,4,253
+mini,other,hatchback,fwd,gas,automatic,4,75
+mini,paceman,hatchback,unknown,gas,automatic,4,13
+mini,roadster,convertible,fwd,gas,automatic,4,5
+mini,unknown,van,fwd,gas,automatic,4,23
+mitsubishi,3000gt,coupe,fwd,gas,manual,6,17
+mitsubishi,delica,other,4wd,diesel,automatic,4,8
+mitsubishi,diamante,sedan,fwd,gas,automatic,6,6
+mitsubishi,eclipse,coupe,fwd,gas,automatic,4,131
+mitsubishi,eclipse cross,hatchback,4wd,gas,automatic,4,43
+mitsubishi,endeavor,SUV,4wd,gas,automatic,6,35
+mitsubishi,fuso fe,pickup,rwd,diesel,automatic,4,18
+mitsubishi,fuso fh,pickup,rwd,diesel,manual,4,1
+mitsubishi,galant,sedan,fwd,gas,automatic,4,76
+mitsubishi,i-miev,sedan,rwd,electric,automatic,other,3
+mitsubishi,lancer,sedan,fwd,gas,automatic,4,174
+mitsubishi,minicab,pickup,4wd,gas,manual,3,3
+mitsubishi,mirage,sedan,fwd,gas,automatic,3,152
+mitsubishi,montero,SUV,4wd,gas,automatic,6,35
+mitsubishi,montero sport,SUV,4wd,gas,automatic,6,20
+mitsubishi,other,SUV,fwd,gas,automatic,4,117
+mitsubishi,outlander,SUV,4wd,gas,automatic,4,282
+mitsubishi,outlander sport,hatchback,4wd,gas,automatic,4,201
+mitsubishi,raider,pickup,rwd,gas,automatic,6,7
+mitsubishi,unknown,pickup,unknown,diesel,automatic,4,33
+nissan,240sx,coupe,rwd,gas,manual,4,5
+nissan,280zx,coupe,rwd,gas,manual,6,2
+nissan,300zx,coupe,rwd,gas,manual,6,49
+nissan,350z,convertible,rwd,gas,automatic,6,100
+nissan,370z,coupe,rwd,gas,automatic,6,92
+nissan,720,pickup,rwd,gas,manual,4,3
+nissan,altima,sedan,fwd,gas,automatic,4,2217
+nissan,armada,SUV,4wd,gas,automatic,8,242
+nissan,cube,wagon,fwd,gas,automatic,4,51
+nissan,frontier,pickup,4wd,gas,automatic,6,631
+nissan,gt-r,coupe,4wd,gas,automatic,6,5
+nissan,hardbody,pickup,rwd,gas,manual,4,22
+nissan,juke,SUV,4wd,gas,automatic,4,182
+nissan,kicks,SUV,fwd,gas,automatic,4,44
+nissan,leaf,hatchback,fwd,electric,automatic,other,200
+nissan,maxima,sedan,fwd,gas,automatic,6,547
+nissan,murano,SUV,4wd,gas,automatic,6,646
+nissan,nv,van,rwd,gas,automatic,6,62
+nissan,nv200,van,fwd,gas,automatic,4,77
+nissan,other,sedan,fwd,gas,automatic,4,480
+nissan,pathfinder,SUV,4wd,gas,automatic,6,605
+nissan,quest,mini-van,fwd,gas,automatic,6,142
+nissan,rogue,SUV,4wd,gas,automatic,4,1118
+nissan,rogue select,SUV,4wd,gas,automatic,4,42
+nissan,rogue sport,hatchback,fwd,gas,automatic,4,70
+nissan,safari,other,4wd,gas,manual,6,1
+nissan,sentra,sedan,fwd,gas,automatic,4,1140
+nissan,skyline,coupe,4wd,gas,automatic,6,6
+nissan,stanza,sedan,fwd,gas,automatic,4,3
+nissan,titan,pickup,4wd,gas,automatic,8,462
+nissan,ud2600,pickup,rwd,diesel,automatic,6,1
+nissan,unknown,pickup,unknown,gas,automatic,4,97
+nissan,versa,sedan,fwd,gas,automatic,4,642
+nissan,versa note,hatchback,fwd,gas,automatic,4,118
+nissan,xterra,SUV,4wd,gas,automatic,6,331
+nissan,z,convertible,rwd,gas,other,6,3
+oldsmobile,88,sedan,unknown,gas,automatic,6,25
+oldsmobile,98,sedan,fwd,gas,automatic,6,9
+oldsmobile,alero,sedan,fwd,gas,automatic,6,28
+oldsmobile,aurora,sedan,fwd,gas,automatic,6,12
+oldsmobile,bravada,SUV,4wd,gas,automatic,6,20
+oldsmobile,cutlass,sedan,unknown,gas,automatic,6,20
+oldsmobile,cutlass ciera,sedan,fwd,gas,automatic,6,4
+oldsmobile,cutlass supreme,sedan,fwd,gas,automatic,6,13
+oldsmobile,intrigue,sedan,fwd,gas,automatic,6,8
+oldsmobile,other,sedan,fwd,gas,automatic,6,23
+oldsmobile,regency,sedan,fwd,gas,automatic,6,2
+oldsmobile,silhouette,mini-van,fwd,gas,automatic,6,10
+oldsmobile,toronado,coupe,fwd,gas,automatic,8,6
+oldsmobile,unknown,sedan,rwd,gas,automatic,6,3
+peterbilt,335,pickup,rwd,diesel,automatic,6,4
+peterbilt,337,pickup,rwd,diesel,automatic,6,8
+peterbilt,379,pickup,rwd,diesel,manual,6,5
+peterbilt,386,pickup,unknown,diesel,manual,6,3
+peterbilt,389,other,rwd,diesel,automatic,6,2
+peterbilt,other,pickup,rwd,diesel,automatic,6,16
+plymouth,duster,unknown,unknown,gas,automatic,6,1
+plymouth,grand voyager,mini-van,fwd,gas,automatic,6,3
+plymouth,neon,sedan,fwd,gas,automatic,4,5
+plymouth,other,mini-van,fwd,gas,automatic,4,5
+plymouth,prowler,convertible,rwd,gas,automatic,6,15
+plymouth,voyager,mini-van,fwd,gas,automatic,6,10
+pontiac,aztek,SUV,unknown,gas,automatic,6,10
+pontiac,bonneville,sedan,fwd,gas,automatic,6,50
+pontiac,fiero,coupe,rwd,gas,automatic,6,23
+pontiac,firebird,coupe,rwd,gas,automatic,8,138
+pontiac,g3,hatchback,fwd,gas,automatic,4,4
+pontiac,g5,coupe,fwd,gas,automatic,4,36
+pontiac,g6,sedan,fwd,gas,automatic,6,304
+pontiac,g8,sedan,rwd,gas,automatic,8,32
+pontiac,grand am,sedan,fwd,gas,automatic,6,79
+pontiac,grand prix,sedan,fwd,gas,automatic,6,215
+pontiac,gto,coupe,rwd,gas,manual,8,28
+pontiac,montana,mini-van,fwd,gas,automatic,6,50
+pontiac,other,coupe,fwd,gas,automatic,6,86
+pontiac,parisienne,sedan,fwd,gas,automatic,6,2
+pontiac,solstice,convertible,rwd,gas,automatic,4,82
+pontiac,sunfire,coupe,fwd,gas,automatic,4,16
+pontiac,torrent,SUV,unknown,gas,automatic,6,58
+pontiac,unknown,SUV,fwd,gas,automatic,4,11
+pontiac,vibe,hatchback,fwd,gas,automatic,4,147
+porsche,911,convertible,rwd,gas,manual,6,93
+porsche,924,coupe,rwd,gas,manual,4,7
+porsche,928,coupe,rwd,gas,automatic,8,14
+porsche,944,coupe,rwd,gas,manual,4,22
+porsche,968,convertible,rwd,gas,manual,4,5
+porsche,boxster,convertible,rwd,gas,manual,6,109
+porsche,cayenne,SUV,4wd,gas,automatic,6,194
+porsche,cayman,coupe,rwd,gas,manual,6,38
+porsche,macan,SUV,4wd,gas,automatic,6,61
+porsche,other,coupe,4wd,gas,automatic,6,104
+porsche,panamera,sedan,unknown,gas,automatic,6,66
+porsche,unknown,other,unknown,gas,automatic,6,12
+ram,1500,pickup,4wd,gas,automatic,8,3410
+ram,2500,pickup,4wd,diesel,automatic,6,1597
+ram,3500,pickup,4wd,diesel,automatic,6,732
+ram,4500,pickup,rwd,diesel,automatic,6,15
+ram,5500,pickup,4wd,diesel,automatic,6,54
+ram,c/v,van,fwd,gas,automatic,6,21
+ram,charger,SUV,4wd,gas,automatic,8,4
+ram,dakota,pickup,4wd,gas,automatic,6,11
+ram,other,pickup,4wd,gas,automatic,8,578
+ram,promaster,van,fwd,gas,automatic,6,166
+ram,promaster city,van,fwd,gas,automatic,4,77
+ram,ram 50,pickup,rwd,gas,automatic,4,3
+ram,ram van,van,rwd,gas,automatic,8,18
+ram,unknown,pickup,4wd,gas,automatic,8,512
+rover,defender,SUV,4wd,diesel,manual,4,22
+rover,discovery,SUV,4wd,gas,automatic,8,61
+rover,discovery sport,SUV,4wd,gas,automatic,4,115
+rover,freelander,SUV,4wd,gas,automatic,6,6
+rover,lr2,SUV,4wd,gas,automatic,6,41
+rover,lr3,SUV,4wd,gas,automatic,8,38
+rover,lr4,SUV,4wd,gas,automatic,8,63
+rover,other,SUV,4wd,gas,automatic,8,95
+rover,range rover,SUV,4wd,gas,automatic,8,80
+rover,range rover evoque,SUV,4wd,gas,automatic,4,141
+rover,range rover sport,SUV,4wd,gas,automatic,8,223
+rover,range rover velar,SUV,4wd,gas,automatic,4,33
+rover,unknown,SUV,4wd,gas,automatic,8,189
+saab,9-2x,hatchback,4wd,gas,automatic,4,7
+saab,9-3,sedan,fwd,gas,automatic,4,124
+saab,9-5,sedan,fwd,gas,automatic,4,32
+saab,9-7x,SUV,4wd,gas,automatic,6,20
+saab,900,convertible,fwd,gas,manual,4,13
+saab,other,sedan,fwd,gas,automatic,4,49
+saturn,astra,coupe,fwd,gas,automatic,4,16
+saturn,aura,sedan,fwd,gas,automatic,6,106
+saturn,ion,sedan,fwd,gas,automatic,4,128
+saturn,l-series,sedan,fwd,gas,automatic,6,20
+saturn,other,sedan,fwd,gas,automatic,4,58
+saturn,outlook,SUV,unknown,gas,automatic,6,40
+saturn,relay,mini-van,4wd,gas,automatic,6,3
+saturn,s-series,sedan,fwd,gas,automatic,4,65
+saturn,sky,convertible,rwd,gas,automatic,4,50
+saturn,unknown,sedan,unknown,gas,automatic,4,17
+saturn,vue,SUV,fwd,gas,automatic,6,227
+scion,fr-s,coupe,rwd,gas,automatic,4,64
+scion,ia,sedan,fwd,gas,automatic,4,13
+scion,im,hatchback,fwd,gas,other,4,15
+scion,iq,other,fwd,gas,automatic,4,4
+scion,other,coupe,fwd,gas,automatic,4,25
+scion,tc,coupe,fwd,gas,automatic,4,175
+scion,unknown,hatchback,fwd,gas,automatic,4,5
+scion,xa,hatchback,fwd,gas,automatic,4,26
+scion,xb,wagon,fwd,gas,automatic,4,173
+scion,xd,hatchback,fwd,gas,automatic,4,66
+smart,fortwo,coupe,rwd,gas,automatic,3,53
+smart,other,coupe,rwd,electric,automatic,other,13
+sterling,acterra,pickup,unknown,diesel,automatic,6,12
+sterling,l8500,pickup,rwd,diesel,automatic,6,2
+sterling,lt7500,pickup,rwd,diesel,automatic,6,2
+sterling,lt9500,unknown,rwd,other,automatic,6,1
+sterling,other,pickup,unknown,diesel,automatic,6,11
+sterling,sc8000,unknown,rwd,diesel,automatic,6,1
+sterling,unknown,pickup,rwd,diesel,automatic,6,5
+subaru,ascent,SUV,4wd,gas,automatic,4,30
+subaru,baja,pickup,4wd,gas,automatic,4,34
+subaru,brz,coupe,rwd,gas,manual,4,43
+subaru,crosstrek,hatchback,4wd,gas,automatic,4,411
+subaru,forester,SUV,4wd,gas,automatic,4,1235
+subaru,impreza,sedan,4wd,gas,automatic,4,882
+subaru,legacy,sedan,4wd,gas,automatic,4,701
+subaru,other,wagon,4wd,gas,automatic,4,340
+subaru,outback,wagon,4wd,gas,automatic,4,1439
+subaru,svx,coupe,4wd,gas,automatic,6,3
+subaru,tribeca,SUV,4wd,gas,automatic,6,71
+subaru,unknown,SUV,4wd,gas,automatic,4,30
+subaru,wrx,sedan,4wd,gas,manual,4,508
+suzuki,carry,pickup,4wd,gas,manual,3,3
+suzuki,forenza,sedan,fwd,gas,automatic,4,16
+suzuki,grand vitara,SUV,4wd,gas,automatic,6,41
+suzuki,kizashi,sedan,4wd,gas,automatic,4,6
+suzuki,other,sedan,unknown,gas,automatic,4,43
+suzuki,reno,hatchback,fwd,gas,automatic,4,6
+suzuki,samurai,SUV,4wd,gas,manual,4,6
+suzuki,sidekick,SUV,4wd,gas,manual,4,5
+suzuki,sx4,sedan,4wd,gas,automatic,4,57
+suzuki,unknown,SUV,4wd,gas,automatic,4,3
+suzuki,vitara,SUV,4wd,gas,manual,4,7
+suzuki,xl-7,SUV,4wd,gas,automatic,6,30
+tesla,model 3,sedan,rwd,electric,automatic,other,74
+tesla,model s,sedan,rwd,electric,automatic,other,106
+tesla,model x,SUV,4wd,electric,automatic,other,25
+tesla,model y,SUV,4wd,electric,automatic,other,3
+tesla,other,sedan,4wd,electric,automatic,other,35
+tesla,unknown,other,fwd,electric,automatic,other,4
+toyota,4runner,SUV,4wd,gas,automatic,6,1266
+toyota,86,coupe,rwd,gas,manual,4,19
+toyota,avalon,sedan,fwd,gas,automatic,6,503
+toyota,c-hr,hatchback,fwd,gas,automatic,4,66
+toyota,camry,sedan,fwd,gas,automatic,4,2991
+toyota,celica,hatchback,fwd,gas,automatic,4,62
+toyota,corolla,sedan,fwd,gas,automatic,4,1953
+toyota,cressida,sedan,rwd,gas,automatic,6,9
+toyota,crown,wagon,rwd,gas,automatic,6,1
+toyota,echo,sedan,fwd,gas,automatic,4,28
+toyota,fj cruiser,SUV,4wd,gas,automatic,6,211
+toyota,fr-s,coupe,rwd,gas,manual,4,10
+toyota,hiace,van,4wd,diesel,automatic,4,9
+toyota,highlander,SUV,4wd,gas,automatic,6,1028
+toyota,hilux,pickup,4wd,diesel,manual,4,5
+toyota,iq,hatchback,fwd,gas,automatic,4,8
+toyota,land cruiser,SUV,4wd,gas,automatic,8,163
+toyota,liteace,other,4wd,diesel,automatic,4,3
+toyota,matrix,hatchback,fwd,gas,automatic,4,180
+toyota,mr2,convertible,rwd,gas,manual,4,32
+toyota,other,SUV,4wd,gas,automatic,4,864
+toyota,paseo,coupe,fwd,gas,manual,4,6
+toyota,pickup,pickup,4wd,gas,manual,4,84
+toyota,previa,van,4wd,gas,automatic,4,8
+toyota,prius,hatchback,fwd,hybrid,automatic,4,1588
+toyota,rav4,SUV,4wd,gas,automatic,4,1431
+toyota,sequoia,SUV,4wd,gas,automatic,8,287
+toyota,sienna,mini-van,fwd,gas,automatic,6,1090
+toyota,sierra 1500,mini-van,fwd,gas,automatic,6,2
+toyota,solara,coupe,fwd,gas,automatic,6,172
+toyota,supra,coupe,rwd,gas,automatic,6,28
+toyota,t100,pickup,4wd,gas,automatic,6,16
+toyota,tacoma,pickup,4wd,gas,automatic,6,2111
+toyota,tc,hatchback,fwd,gas,automatic,4,50
+toyota,tercel,sedan,fwd,gas,manual,4,11
+toyota,townace,mini-van,4wd,diesel,manual,4,3
+toyota,tundra,pickup,4wd,gas,automatic,8,1365
+toyota,unknown,SUV,unknown,gas,automatic,4,186
+toyota,venza,wagon,4wd,gas,automatic,6,182
+toyota,xa,hatchback,fwd,gas,manual,4,7
+toyota,xb,wagon,fwd,gas,automatic,4,43
+toyota,xd,hatchback,fwd,gas,automatic,4,11
+toyota,yaris,sedan,fwd,gas,automatic,4,252
+triumph,other,convertible,rwd,gas,automatic,8,2
+triumph,spitfire,convertible,rwd,gas,manual,4,7
+triumph,tr7,convertible,rwd,gas,manual,4,1
+unknown,3 series,sedan,unknown,gas,automatic,4,5
+unknown,300,sedan,rwd,gas,automatic,6,9
+unknown,4runner,unknown,4wd,gas,automatic,6,1
+unknown,570gt,coupe,rwd,gas,automatic,8,3
+unknown,570s,coupe,rwd,gas,automatic,8,2
+unknown,720,pickup,rwd,diesel,manual,4,2
+unknown,7300,pickup,4wd,diesel,automatic,6,2
+unknown,9-3,unknown,unknown,gas,automatic,6,1
+unknown,all american,bus,rwd,diesel,automatic,6,4
+unknown,altima,sedan,fwd,gas,automatic,4,7
+unknown,aspen,SUV,unknown,gas,automatic,8,3
+unknown,aurora,unknown,unknown,gas,automatic,8,1
+unknown,avanti,coupe,rwd,gas,automatic,8,3
+unknown,c-class,sedan,fwd,gas,automatic,4,3
+unknown,c10,pickup,rwd,gas,automatic,8,1
+unknown,camaro,convertible,rwd,gas,automatic,8,7
+unknown,camry,sedan,fwd,gas,automatic,4,8
+unknown,capri,convertible,rwd,gas,manual,4,1
+unknown,cooper,convertible,fwd,gas,manual,4,3
+unknown,corvette,coupe,rwd,gas,automatic,8,50
+unknown,crown victoria,unknown,unknown,gas,automatic,8,7
+unknown,ct660,pickup,rwd,diesel,automatic,6,1
+unknown,cts,sedan,rwd,gas,automatic,6,4
+unknown,deville,other,fwd,gas,automatic,8,6
+unknown,dts,sedan,fwd,gas,automatic,8,3
+unknown,durango,SUV,4wd,gas,automatic,8,5
+unknown,e-series,van,rwd,gas,automatic,10,6
+unknown,edge,other,fwd,gas,automatic,6,3
+unknown,el camino,unknown,rwd,gas,automatic,8,1
+unknown,elantra,sedan,fwd,gas,automatic,4,25
+unknown,elise,convertible,rwd,gas,manual,4,3
+unknown,enclave,SUV,4wd,gas,automatic,6,1
+unknown,equinox,SUV,4wd,gas,automatic,4,3
+unknown,es,sedan,fwd,gas,automatic,6,3
+unknown,escalade,SUV,4wd,gas,automatic,8,5
+unknown,escape,SUV,fwd,gas,automatic,4,3
+unknown,evora,coupe,rwd,gas,manual,6,3
+unknown,expedition,SUV,4wd,gas,automatic,8,2
+unknown,f-150,pickup,4wd,gas,automatic,6,14
+unknown,f-250,pickup,4wd,diesel,automatic,8,8
+unknown,f-350,pickup,4wd,diesel,automatic,8,3
+unknown,f-650,pickup,rwd,diesel,automatic,10,3
+unknown,f-800,pickup,rwd,diesel,automatic,6,4
+unknown,focus,hatchback,fwd,gas,automatic,4,3
+unknown,fr-s,coupe,rwd,gas,manual,4,3
+unknown,g6,sedan,fwd,gas,automatic,6,4
+unknown,gallardo,coupe,4wd,gas,automatic,10,5
+unknown,genesis coupe,coupe,rwd,gas,automatic,6,1
+unknown,grand caravan,mini-van,fwd,gas,automatic,6,4
+unknown,grand cherokee,SUV,4wd,gas,automatic,6,3
+unknown,h3,SUV,4wd,gas,automatic,5,9
+unknown,hijet,mini-van,4wd,gas,manual,3,6
+unknown,humvee,pickup,4wd,diesel,automatic,8,10
+unknown,huracan,coupe,unknown,gas,other,10,1
+unknown,impala,sedan,fwd,gas,automatic,6,4
+unknown,impreza,hatchback,4wd,gas,automatic,4,4
+unknown,karma,sedan,rwd,hybrid,automatic,4,3
+unknown,l7500,unknown,rwd,diesel,automatic,6,2
+unknown,lacrosse,sedan,fwd,gas,automatic,4,1
+unknown,m2,pickup,rwd,diesel,manual,6,2
+unknown,malibu,sedan,fwd,gas,automatic,4,1
+unknown,mazda3,hatchback,fwd,gas,automatic,4,20
+unknown,mazda5,van,fwd,gas,automatic,4,7
+unknown,mazda6,sedan,unknown,gas,automatic,4,3
+unknown,metro,hatchback,fwd,gas,automatic,3,8
+unknown,mgb,convertible,rwd,gas,manual,4,5
+unknown,murano,SUV,fwd,gas,automatic,6,3
+unknown,mustang,convertible,rwd,gas,automatic,6,7
+unknown,mv-1,van,rwd,gas,automatic,8,5
+unknown,nitro,SUV,4wd,gas,automatic,6,1
+unknown,npr,pickup,rwd,diesel,automatic,8,7
+unknown,other,sedan,unknown,gas,automatic,6,2711
+unknown,outback,wagon,4wd,gas,automatic,4,4
+unknown,outlander,SUV,fwd,gas,manual,4,1
+unknown,p42,pickup,rwd,diesel,automatic,4,2
+unknown,phantom,sedan,fwd,gas,automatic,12,2
+unknown,pilot,unknown,4wd,gas,automatic,6,3
+unknown,prius,mini-van,fwd,hybrid,automatic,4,6
+unknown,prizm,sedan,fwd,gas,automatic,4,8
+unknown,pt cruiser,hatchback,fwd,gas,automatic,4,17
+unknown,ranger,pickup,rwd,gas,automatic,4,4
+unknown,samurai,offroad,4wd,gas,manual,4,3
+unknown,santa fe,SUV,4wd,gas,automatic,6,9
+unknown,silver spur,sedan,rwd,gas,automatic,8,4
+unknown,silverado 1500,pickup,4wd,gas,automatic,8,3
+unknown,silverado 2500,pickup,4wd,diesel,automatic,8,3
+unknown,slingshot,unknown,rwd,gas,manual,4,4
+unknown,sonata,sedan,fwd,gas,automatic,4,19
+unknown,srx,SUV,unknown,gas,automatic,6,4
+unknown,suburban,SUV,4wd,gas,automatic,8,3
+unknown,sx4,hatchback,4wd,gas,manual,4,5
+unknown,talon,coupe,fwd,gas,automatic,4,3
+unknown,taurus,sedan,rwd,gas,automatic,6,1
+unknown,tc,hatchback,fwd,gas,automatic,4,3
+unknown,town and country,mini-van,fwd,gas,automatic,6,29
+unknown,tracker,SUV,4wd,gas,manual,4,11
+unknown,unknown,pickup,unknown,gas,automatic,6,357
+unknown,w42,van,rwd,gas,automatic,8,3
+unknown,wrangler,SUV,4wd,gas,automatic,6,5
+unknown,xb,hatchback,fwd,gas,automatic,4,6
+unknown,xj,sedan,rwd,gas,automatic,8,2
+volkswagen,arteon,sedan,fwd,gas,automatic,4,10
+volkswagen,atlas,SUV,unknown,gas,automatic,6,106
+volkswagen,atlas cross sport,other,unknown,gas,other,6,14
+volkswagen,beetle,hatchback,fwd,gas,automatic,4,371
+volkswagen,cabrio,convertible,fwd,gas,automatic,4,20
+volkswagen,cc,sedan,fwd,gas,automatic,4,175
+volkswagen,eos,convertible,fwd,gas,automatic,4,54
+volkswagen,eurovan,van,fwd,gas,automatic,6,51
+volkswagen,golf,hatchback,fwd,gas,automatic,4,593
+volkswagen,jetta,sedan,fwd,gas,automatic,4,1430
+volkswagen,other,sedan,fwd,gas,automatic,4,356
+volkswagen,passat,sedan,fwd,gas,automatic,4,670
+volkswagen,phaeton,sedan,4wd,gas,automatic,8,3
+volkswagen,rabbit,hatchback,fwd,gas,manual,5,67
+volkswagen,routan,mini-van,fwd,gas,automatic,6,53
+volkswagen,tiguan,SUV,unknown,gas,automatic,4,405
+volkswagen,touareg,SUV,4wd,gas,automatic,6,101
+volkswagen,unknown,sedan,unknown,gas,automatic,4,44
+volkswagen,vanagon,van,rwd,gas,manual,4,68
+volvo,240,sedan,rwd,gas,automatic,4,22
+volvo,740,wagon,rwd,gas,automatic,4,3
+volvo,850,sedan,fwd,gas,automatic,5,10
+volvo,960,sedan,rwd,gas,automatic,5,2
+volvo,c30,hatchback,fwd,gas,automatic,5,24
+volvo,c70,convertible,fwd,gas,automatic,5,54
+volvo,other,SUV,4wd,gas,automatic,5,180
+volvo,s40,sedan,fwd,gas,automatic,5,95
+volvo,s60,sedan,fwd,gas,automatic,5,294
+volvo,s70,sedan,fwd,gas,automatic,5,16
+volvo,s80,sedan,fwd,gas,automatic,6,102
+volvo,s90,sedan,unknown,gas,automatic,4,23
+volvo,unknown,sedan,4wd,gas,automatic,5,31
+volvo,v40,wagon,fwd,gas,automatic,4,3
+volvo,v50,wagon,fwd,gas,automatic,5,24
+volvo,v60,wagon,fwd,gas,automatic,4,26
+volvo,v70,wagon,fwd,gas,automatic,5,64
+volvo,v90,unknown,4wd,gas,automatic,4,2
+volvo,vnl,pickup,rwd,diesel,manual,6,15
+volvo,xc40,other,fwd,gas,other,4,19
+volvo,xc60,SUV,4wd,gas,automatic,6,189
+volvo,xc70,wagon,4wd,gas,automatic,5,136
+volvo,xc90,SUV,4wd,gas,automatic,6,304

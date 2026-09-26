@@ -2,10 +2,9 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from common import AMBER, LIGHT_SLATE, PANEL, ROSE, TEAL, TEXT, chart, load, panel
+from common import BLUE, GOLD, LINE, PANEL, RED, SUBTEXT, TEXT, chart, load, panel
 
 NOTEBOOK = "12_dashboard_duplicates.ipynb"
-GRID = "rgba(100, 116, 139, 0.25)"
 
 st.title("Duplicates")
 
@@ -13,7 +12,7 @@ summary = load("dup_summary.csv", NOTEBOOK).set_index("metric")["value"]
 evidence = load("dup_evidence.csv", NOTEBOOK)
 why = load("dup_why.csv", NOTEBOOK)
 posts_per_car = load("dup_posts_per_car.csv", NOTEBOOK)
-examples = load("dup_examples.csv", NOTEBOOK)
+examples = load("dup_examples.csv", NOTEBOOK, needs=["usual_price"])
 text = load("dup_text.csv", NOTEBOOK)
 reposts = load("dup_reposts.csv", NOTEBOOK)
 wrong = load("dup_wrong.csv", NOTEBOOK)
@@ -54,7 +53,7 @@ cards[2].metric("Same post scraped twice", f"{int(summary['same post scraped twi
 
 with panel("Removed copies by reason"):
     fig = go.Figure(go.Bar(
-        x=why["rows"], y=why["why"], orientation="h", marker_color=TEAL,
+        x=why["rows"], y=why["why"], orientation="h", marker_color=GOLD,
         text=[f"{n:,}  ({s:.0%})" for n, s in zip(why["rows"], why["share"])],
         textposition="outside", textfont=dict(color=TEXT),
         customdata=why[["dealer", "carvana", "median_days_apart"]],
@@ -62,7 +61,7 @@ with panel("Removed copies by reason"):
                       "<br>median %{customdata[2]:.1f} days after the kept copy<extra></extra>",
     ))
     fig.update_yaxes(autorange="reversed", showgrid=False)
-    fig.update_xaxes(tickformat=",", showgrid=True, gridcolor=GRID, range=[0, why["rows"].max() * 1.25])
+    fig.update_xaxes(tickformat=",", showgrid=True, gridcolor=LINE, range=[0, why["rows"].max() * 1.25])
     fig.update_layout(height=45 * len(why) + 70, bargap=0.5)
     chart(fig)
 
@@ -72,12 +71,12 @@ with left, panel("How many times each car was posted"):
     counts = posts_per_car.assign(bucket=posts_per_car["posts"].clip(upper=10)).groupby("bucket")["cars"].sum()
     labels = [str(p) if p < 10 else "10+" for p in counts.index]
     fig = go.Figure(go.Bar(
-        x=labels, y=counts.values, marker_color=TEAL,
+        x=labels, y=counts.values, marker_color=GOLD,
         text=[f"{n:,}" for n in counts.values], textposition="outside", textfont=dict(color=TEXT),
         hovertemplate="posted %{x} times: %{y:,} cars<extra></extra>", constraintext="none",
     ))
     fig.update_xaxes(title="posts", type="category")
-    fig.update_yaxes(tickformat=",", title="cars", range=[0, counts.max() * 1.12], gridcolor=GRID)
+    fig.update_yaxes(tickformat=",", title="cars", range=[0, counts.max() * 1.12], gridcolor=LINE)
     fig.update_layout(height=360, bargap=0.35)
     chart(fig)
 
@@ -87,7 +86,7 @@ with right, panel("Is the ad copy-pasted?"):
         with column.container(border=True):
             st.markdown(f"**{seller['kind'].capitalize()}**")
             st.markdown(f"<div style='font-size:2rem; line-height:1.2'>{seller['median_similarity']:.0%}</div>"
-                        f"<div style='color:{LIGHT_SLATE}'>similar to the first post</div>", unsafe_allow_html=True)
+                        f"<div style='color:{SUBTEXT}'>similar to the first post</div>", unsafe_allow_html=True)
             st.markdown(f"{seller['same ad text']:.0%} identical word for word  \n{seller['cars']:,} cars")
             st.caption(f"similarity from {seller['compared_pairs']:,} compared posts")
 
@@ -109,7 +108,7 @@ st.caption("The dedupe never looked at the VIN or the ad text, so they're an ind
            "copy, do they match the listing it was matched to?")
 
 with panel("Evidence for each removed copy"):
-    colours = [ROSE if e.startswith("different VIN") else TEAL for e in evidence["evidence"]]
+    colours = [RED if e.startswith("different VIN") else GOLD for e in evidence["evidence"]]
     fig = go.Figure(go.Bar(
         x=evidence["rows"], y=evidence["evidence"], orientation="h", marker_color=colours,
         text=[f"{n:,}  ({s:.1%})" if s >= 0.001 else f"{n:,}  (<0.1%)" for n, s in zip(evidence["rows"], evidence["share"])],
@@ -118,7 +117,7 @@ with panel("Evidence for each removed copy"):
         hovertemplate="<b>%{y}</b><br>%{x:,} copies · dealers %{customdata:.0%}<extra></extra>",
     ))
     fig.update_yaxes(autorange="reversed", showgrid=False)
-    fig.update_xaxes(tickformat=",", showgrid=True, gridcolor=GRID, range=[0, evidence["rows"].max() * 1.25])
+    fig.update_xaxes(tickformat=",", showgrid=True, gridcolor=LINE, range=[0, evidence["rows"].max() * 1.25])
     fig.update_layout(height=45 * len(evidence) + 70, bargap=0.5)
     chart(fig)
 
@@ -150,14 +149,14 @@ def car_panel(car, by):
         )
         order = list(dict.fromkeys(car.sort_values("time")[by]))  # rows in order of the first post there
         fig = go.Figure()
-        for usual, colour, name in [(True, TEAL, "usual price"), (False, AMBER, "different price")]:
+        for usual, colour, name in [(True, GOLD, "usual price"), (False, BLUE, "different price")]:
             d = car[car["usual_price"] == usual]
             fig.add_trace(go.Scatter(
                 x=d["time"], y=d[by], mode="markers", name=name,
                 marker=dict(color=colour, size=10, line=dict(color=PANEL, width=2)),
                 text=d["hover"], hovertemplate="%{text}<extra></extra>",
             ))
-        fig.update_yaxes(categoryorder="array", categoryarray=order, autorange="reversed", gridcolor=GRID)
+        fig.update_yaxes(categoryorder="array", categoryarray=order, autorange="reversed", gridcolor=LINE)
         fig.update_layout(height=max(22 * len(order), 110) + 110, margin=dict(t=40), showlegend=True,
                           legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0))
         chart(fig)
@@ -186,12 +185,12 @@ with panel("What differs between the copies of those cars"):
     share = reposts.columns[1]
     reposts = reposts.sort_values(share, ascending=False)
     fig = go.Figure(go.Bar(
-        x=reposts[share], y=reposts["column"], orientation="h", marker_color=TEAL,
+        x=reposts[share], y=reposts["column"], orientation="h", marker_color=GOLD,
         text=[f"{v:.0%}" for v in reposts[share]], textposition="outside", textfont=dict(color=TEXT),
         hovertemplate="%{y} differs for %{x:.0%} of the cars<extra></extra>",
     ))
     fig.update_yaxes(autorange="reversed", showgrid=False)
-    fig.update_xaxes(tickformat=".0%", range=[0, 1], showgrid=True, gridcolor=GRID)
+    fig.update_xaxes(tickformat=".0%", range=[0, 1], showgrid=True, gridcolor=LINE)
     fig.update_layout(height=45 * len(reposts) + 70, bargap=0.5)
     chart(fig)
 

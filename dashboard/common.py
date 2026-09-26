@@ -11,35 +11,40 @@ import streamlit as st
 
 from carpricepredictor.shared import DASHBOARD_DIR
 
-# palette: dark navy + teal
-BG = "#0f172a"
-PANEL = "#1e293b"
-TEXT = "#e2e8f0"
-TEAL = "#14b8a6"
-AMBER = "#f59e0b"
-ROSE = "#f43f5e"
-SLATE = "#64748b"
-VIOLET = "#a78bfa"
-LIGHT_SLATE = "#94a3b8"  # secondary text, and "everything else" groups
-DARK_SLATE = "#334155"  # faint background marks
+# palette: Graphite & Gold (premium automotive, dark)
+BG = "#0c0c0e"  # page
+PANEL = "#161618"  # panels and cards
+LINE = "#2a2a2e"  # borders, gridlines, faint marks
+TEXT = "#f2efe8"  # warm white
+SUBTEXT = "#a09c94"  # secondary text, and "everything else" groups
+GOLD = "#cf9a30"  # the accent: main series, buttons, logo
+BLUE = "#5a8fe0"  # second series
+RED = "#e05a3a"  # bad, removed, expensive
+GREEN = "#3fa88f"  # fourth series; good, cheap
+GRAPHITE = "#6b6b73"  # neutral series; average
+GREY = "#4a4a50"  # reference marks that aren't real contenders (e.g. the Dummy model)
+WHITE = "#ffffff"
 FONT = "Space Grotesk, sans-serif"
 
 TEMPLATE = go.layout.Template(layout=dict(
     font=dict(family=FONT, color=TEXT, size=13),
     paper_bgcolor=PANEL,  # charts always sit in a panel
     plot_bgcolor=PANEL,
-    colorway=[TEAL, AMBER, ROSE, SLATE],
-    xaxis=dict(showgrid=False, zeroline=False, linecolor=SLATE, tickcolor=SLATE, automargin=True),
-    yaxis=dict(gridcolor="rgba(100, 116, 139, 0.25)", zeroline=False, automargin=True),
+    colorway=[GOLD, BLUE, RED, GREEN],  # passes the colour-blind check on PANEL (dataviz validator)
+    xaxis=dict(showgrid=False, zeroline=False, linecolor=GRAPHITE, tickcolor=GRAPHITE, automargin=True),
+    yaxis=dict(gridcolor=LINE, zeroline=False, automargin=True),
     legend=dict(bgcolor="rgba(0,0,0,0)"),
     margin=dict(l=10, r=10, t=10, b=10),
     hoverlabel=dict(font_family=FONT),
 ))
 
-# panels (keyed containers) and number cards get the panel colour
+# panels (keyed containers) and number cards get the panel colour; Streamlit's own chrome is hidden
 STYLE = f"""<style>
-[class*="st-key-panel_"] {{ background: {PANEL}; border-radius: 1rem; padding: 1.25rem 1.5rem; }}
+[class*="st-key-panel_"] {{ background: {PANEL}; border: 1px solid {LINE}; border-radius: 1rem; padding: 1.25rem 1.5rem; }}
 [data-testid="stMetric"] {{ background: {PANEL}; }}
+[data-testid="stAppDeployButton"], [data-testid="stMainMenu"], [data-testid="stStatusWidget"],
+[data-testid="stDecoration"] {{ display: none; }}
+[data-testid^="stBaseButton-primary"], [data-testid^="stBaseButton-primary"] p {{ color: {BG}; font-weight: 700; }}
 </style>"""
 
 
@@ -67,10 +72,17 @@ def _read(path, modified):
     return pd.read_csv(path)
 
 
-def load(name, notebook):
-    """A CSV from DASHBOARD_DIR; stops the page with a hint when the notebook hasn't been run yet."""
+def load(name, notebook, needs=()):
+    """A CSV from DASHBOARD_DIR; stops the page with a hint when the notebook hasn't been run (or re-run) yet.
+
+    needs: columns the page uses that older runs of the notebook didn't write.
+    """
     path = DASHBOARD_DIR / name
     if not path.exists():
         st.warning(f"`data/dashboard/{name}` not found: run `{notebook}` first.")
         st.stop()
-    return _read(path, path.stat().st_mtime)  # the timestamp re-reads the file after a notebook re-run
+    table = _read(path, path.stat().st_mtime)  # the timestamp re-reads the file after a notebook re-run
+    if missing := [c for c in needs if c not in table.columns]:
+        st.warning(f"`data/dashboard/{name}` is from an older run (no {', '.join(missing)}): re-run `{notebook}`.")
+        st.stop()
+    return table

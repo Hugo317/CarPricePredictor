@@ -1,27 +1,27 @@
-column,raw_missing,clean_missing,dropped_at,filled,to_placeholder,how
-id,0.0,,unused columns,,,column dropped
-url,0.0,,listing fields,,,column dropped
-region,0.0,,region column,,,column dropped
-region_url,0.0,,unused columns,,,column dropped
-price,0.0,0.0,,,,never missing
-year,0.0028228073463268367,0.0,,,,rows dropped
-manufacturer,0.04133714392803598,0.0,,12480.0,5111.0,filled
-model,0.012361787856071964,0.0,,3695.0,3695.0,filled
-condition,0.40785232383808095,0.0,,140276.0,140276.0,filled
-cylinders,0.416224700149925,0.0,,147709.0,1603.0,filled
-fuel,0.007058189655172414,0.0,,,,rows dropped
-odometer,0.010307346326836582,0.0,,,,rows dropped
-title_status,0.019307533733133434,0.0,,,,rows dropped
-transmission,0.0059876311844077965,0.0,,,,rows dropped
-VIN,0.37725356071964017,,listing fields,,,column dropped
-drive,0.30586347451274365,0.0,,105697.0,42695.0,filled
-size,0.7176747563718141,,size column,,,column dropped
-type,0.21752717391304346,0.0,,75537.0,1010.0,filled
-paint_color,0.305010775862069,0.0,,106119.0,106119.0,filled
-image_url,0.00015929535232383807,,unused columns,,,column dropped
-description,0.00016398050974512744,,listing fields,,,column dropped
-county,1.0,,unused columns,,,column dropped
-state,0.0,0.0,,,,never missing
-lat,0.015341547976011994,0.005613847165080215,,,,left missing
-long,0.015341547976011994,0.005613847165080215,,,,left missing
-posting_date,0.00015929535232383807,,unused columns,,,column dropped
+column,raw_missing,clean_missing,dropped_at,filled,to_placeholder,became,how
+id,0.0,,unused columns,,,,column dropped
+url,0.0,,listing fields,,,is_dealer,turned into listing fields
+region,0.0,,region column,,,,column dropped
+region_url,0.0,,unused columns,,,,column dropped
+price,0.0,0.0,,,,,never missing
+year,0.0028228073463268367,0.0,,,,,rows dropped
+manufacturer,0.04133714392803598,0.0,,12480.0,5111.0,,filled
+model,0.012361787856071964,0.0,,3695.0,3695.0,,filled
+condition,0.40785232383808095,0.0,,140276.0,140276.0,,filled
+cylinders,0.416224700149925,0.0,,147709.0,1603.0,,filled
+fuel,0.007058189655172414,0.0,,,,,rows dropped
+odometer,0.010307346326836582,0.0,,,,,rows dropped
+title_status,0.019307533733133434,0.0,,,,,rows dropped
+transmission,0.0059876311844077965,0.0,,,,,rows dropped
+VIN,0.37725356071964017,,listing fields,,,has_vin,turned into listing fields
+drive,0.30586347451274365,0.0,,105697.0,42695.0,,filled
+size,0.7176747563718141,,size column,,,,column dropped
+type,0.21752717391304346,0.0,,75537.0,1010.0,,filled
+paint_color,0.305010775862069,0.0,,106119.0,106119.0,,filled
+image_url,0.00015929535232383807,,unused columns,,,,column dropped
+description,0.00016398050974512744,,listing fields,,,desc_len + 11 keyword flags,turned into listing fields
+county,1.0,,unused columns,,,,column dropped
+state,0.0,0.0,,,,,never missing
+lat,0.015341547976011994,0.005613847165080215,,,,,left missing
+long,0.015341547976011994,0.005613847165080215,,,,,left missing
+posting_date,0.00015929535232383807,,unused columns,,,,column dropped
