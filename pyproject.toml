@@ -1,7 +1,7 @@
 [project]
 name = "carpricepredictor"
 version = "0.1.0"
-description = "Add your description here"
+description = "Used-car price prediction (US Craigslist 2021) with CatBoost and a Streamlit fair-price dashboard"
 readme = "README.md"
 authors = [
     { name = "Hugo Caravlho", email = "hugomnc317@gmail.com" }
