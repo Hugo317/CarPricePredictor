@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from carpricepredictor.shared import MODEL_PATH, cat_features, keyword_cols, num_cols
+from carpricepredictor.shared import ensure_model, cat_features, keyword_cols, num_cols
 from common import BG, GRAPHITE, GREEN, PANEL, RED, TEXT, chart, load, panel
 
 NOTEBOOK = "13_dashboard_price_check.ipynb"
@@ -24,9 +24,10 @@ KEYWORD_HELP = {  # the words each flag looks for, from DESCRIPTION_FLAGS in 02_
 VERDICTS = {"cheap": (GREEN, BG), "average": (GRAPHITE, TEXT), "expensive": (RED, TEXT)}  # background, text
 
 
-@st.cache_resource(show_spinner="Loading the model (first time only)...")
+@st.cache_resource(show_spinner="Loading the model (the first visit downloads about 260 MB)...")
 def load_model():
-    return joblib.load(MODEL_PATH)
+    path = ensure_model()
+    return joblib.load(path) if path else None
 
 
 def car_features(car, location, desc_len):
@@ -86,7 +87,7 @@ models = load("pc_models.csv", NOTEBOOK)
 states = load("pc_states.csv", NOTEBOOK).set_index("state")
 defaults = load("pc_defaults.csv", NOTEBOOK).set_index("metric")["value"]
 
-if not MODEL_PATH.exists():
+if load_model() is None:
     st.warning("`models/final_model.joblib` not found: run `05_final_model.ipynb` first.")
     st.stop()
 

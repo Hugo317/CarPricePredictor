@@ -21,6 +21,19 @@ CLEAN_CSV = ROOT / "data" / "vehicles_clean.csv"
 FEATURES_CSV = ROOT / "data" / "vehicles_features.csv"
 BEST_PARAMS_PATH = ROOT / "data" / "best_params.json"
 MODEL_PATH = ROOT / "models" / "final_model.joblib"
+MODEL_REPO = "Hugomnc/car-price-predictor-model"  # the same file on the Hugging Face Hub, for the hosted dashboard
+
+
+def ensure_model():
+    """MODEL_PATH if the model is on disk, otherwise download it from the Hub (cached). None if it cannot be had."""
+    if MODEL_PATH.exists():
+        return MODEL_PATH
+    try:
+        from huggingface_hub import hf_hub_download
+
+        return Path(hf_hub_download(MODEL_REPO, "final_model.joblib"))
+    except Exception:
+        return None
 DASHBOARD_DIR = ROOT / "data" / "dashboard"
 
 # columns of FEATURES_CSV
