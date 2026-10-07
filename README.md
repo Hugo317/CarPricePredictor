@@ -2,6 +2,8 @@
 
 Is that used car cheap, fair or overpriced? This project trains a model on 205,000 US Craigslist listings to predict what a car should cost, and puts it in a small Streamlit app where you enter a car and its asking price and get a verdict.
 
+**Live demo:** [fair-car-price.streamlit.app](https://fair-car-price.streamlit.app). The Price check page downloads the 260 MB model on first use, so it can take a moment to wake.
+
 ![Home page](docs/screenshots/home.png)
 
 ## What's in the app
